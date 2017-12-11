@@ -1,0 +1,57 @@
+#!/bin/sh -eux
+
+ROOT=$PWD
+
+PROJECTS=$(ls $ROOT | grep amazonka)
+SETUP=$ROOT/bin/boris
+
+for PROJECT in $PROJECTS; do
+  echo cp $SETUP/master $ROOT/$PROJECT/master.toml
+done
+
+cat <<EOF > $ROOT/boris-git.toml
+[boris]
+  version = 1
+
+[build.dist-*]
+  git = "refs/heads/master"
+
+[build.branches-*]
+  git = "refs/heads/topic/*"
+
+[build.all-*]
+  git = "refs/heads/**"
+EOF
+
+
+THINGS=$(for PROJECT in $PROJECTS; do
+  cat <<EOF
+[build.dist-7-10-2-$PROJECT]
+  command = [["master", "build", "dist-7-10", "-C", "$PROJECT"]]
+
+[build.dist-8-0-1-$PROJECT]
+  command = [["master", "build", "dist-8-0", "-C", "$PROJECT"]]
+
+[build.branches-7-10-2-$PROJECT]
+  command = [["master", "build", "branches-7-10", "-C", "$PROJECT"]]
+
+[build.branches-8-0-1-$PROJECT]
+  command = [["master", "build", "branches-8-0", "-C", "$PROJECT"]]
+
+EOF
+done)
+
+cat <<EOF > $ROOT/boris.toml
+[boris]
+  version = 1
+
+$THINGS
+[build.dist-validate]
+  command = [["validate-respect"]]
+
+[build.all-submodules]
+  command = [["dangling-refs"]]
+
+[build.all-rebased]
+  command = [["rebased"]]
+EOF
