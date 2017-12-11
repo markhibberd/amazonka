@@ -1,0 +1,1318 @@
+[boris]
+  version = 1
+
+[build.dist-7-10-2-amazonka]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka"]]
+
+[build.dist-8-0-1-amazonka]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka"]]
+
+[build.branches-7-10-2-amazonka]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka"]]
+
+[build.branches-8-0-1-amazonka]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka"]]
+
+[build.dist-7-10-2-amazonka-apigateway]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-apigateway"]]
+
+[build.dist-8-0-1-amazonka-apigateway]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-apigateway"]]
+
+[build.branches-7-10-2-amazonka-apigateway]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-apigateway"]]
+
+[build.branches-8-0-1-amazonka-apigateway]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-apigateway"]]
+
+[build.dist-7-10-2-amazonka-application-autoscaling]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-application-autoscaling"]]
+
+[build.dist-8-0-1-amazonka-application-autoscaling]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-application-autoscaling"]]
+
+[build.branches-7-10-2-amazonka-application-autoscaling]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-application-autoscaling"]]
+
+[build.branches-8-0-1-amazonka-application-autoscaling]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-application-autoscaling"]]
+
+[build.dist-7-10-2-amazonka-appstream]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-appstream"]]
+
+[build.dist-8-0-1-amazonka-appstream]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-appstream"]]
+
+[build.branches-7-10-2-amazonka-appstream]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-appstream"]]
+
+[build.branches-8-0-1-amazonka-appstream]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-appstream"]]
+
+[build.dist-7-10-2-amazonka-athena]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-athena"]]
+
+[build.dist-8-0-1-amazonka-athena]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-athena"]]
+
+[build.branches-7-10-2-amazonka-athena]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-athena"]]
+
+[build.branches-8-0-1-amazonka-athena]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-athena"]]
+
+[build.dist-7-10-2-amazonka-autoscaling]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-autoscaling"]]
+
+[build.dist-8-0-1-amazonka-autoscaling]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-autoscaling"]]
+
+[build.branches-7-10-2-amazonka-autoscaling]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-autoscaling"]]
+
+[build.branches-8-0-1-amazonka-autoscaling]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-autoscaling"]]
+
+[build.dist-7-10-2-amazonka-batch]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-batch"]]
+
+[build.dist-8-0-1-amazonka-batch]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-batch"]]
+
+[build.branches-7-10-2-amazonka-batch]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-batch"]]
+
+[build.branches-8-0-1-amazonka-batch]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-batch"]]
+
+[build.dist-7-10-2-amazonka-budgets]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-budgets"]]
+
+[build.dist-8-0-1-amazonka-budgets]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-budgets"]]
+
+[build.branches-7-10-2-amazonka-budgets]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-budgets"]]
+
+[build.branches-8-0-1-amazonka-budgets]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-budgets"]]
+
+[build.dist-7-10-2-amazonka-certificatemanager]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-certificatemanager"]]
+
+[build.dist-8-0-1-amazonka-certificatemanager]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-certificatemanager"]]
+
+[build.branches-7-10-2-amazonka-certificatemanager]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-certificatemanager"]]
+
+[build.branches-8-0-1-amazonka-certificatemanager]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-certificatemanager"]]
+
+[build.dist-7-10-2-amazonka-clouddirectory]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-clouddirectory"]]
+
+[build.dist-8-0-1-amazonka-clouddirectory]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-clouddirectory"]]
+
+[build.branches-7-10-2-amazonka-clouddirectory]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-clouddirectory"]]
+
+[build.branches-8-0-1-amazonka-clouddirectory]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-clouddirectory"]]
+
+[build.dist-7-10-2-amazonka-cloudformation]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-cloudformation"]]
+
+[build.dist-8-0-1-amazonka-cloudformation]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-cloudformation"]]
+
+[build.branches-7-10-2-amazonka-cloudformation]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-cloudformation"]]
+
+[build.branches-8-0-1-amazonka-cloudformation]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-cloudformation"]]
+
+[build.dist-7-10-2-amazonka-cloudfront]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-cloudfront"]]
+
+[build.dist-8-0-1-amazonka-cloudfront]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-cloudfront"]]
+
+[build.branches-7-10-2-amazonka-cloudfront]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-cloudfront"]]
+
+[build.branches-8-0-1-amazonka-cloudfront]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-cloudfront"]]
+
+[build.dist-7-10-2-amazonka-cloudhsm]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-cloudhsm"]]
+
+[build.dist-8-0-1-amazonka-cloudhsm]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-cloudhsm"]]
+
+[build.branches-7-10-2-amazonka-cloudhsm]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-cloudhsm"]]
+
+[build.branches-8-0-1-amazonka-cloudhsm]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-cloudhsm"]]
+
+[build.dist-7-10-2-amazonka-cloudhsmv2]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-cloudhsmv2"]]
+
+[build.dist-8-0-1-amazonka-cloudhsmv2]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-cloudhsmv2"]]
+
+[build.branches-7-10-2-amazonka-cloudhsmv2]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-cloudhsmv2"]]
+
+[build.branches-8-0-1-amazonka-cloudhsmv2]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-cloudhsmv2"]]
+
+[build.dist-7-10-2-amazonka-cloudsearch]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-cloudsearch"]]
+
+[build.dist-8-0-1-amazonka-cloudsearch]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-cloudsearch"]]
+
+[build.branches-7-10-2-amazonka-cloudsearch]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-cloudsearch"]]
+
+[build.branches-8-0-1-amazonka-cloudsearch]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-cloudsearch"]]
+
+[build.dist-7-10-2-amazonka-cloudsearch-domains]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-cloudsearch-domains"]]
+
+[build.dist-8-0-1-amazonka-cloudsearch-domains]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-cloudsearch-domains"]]
+
+[build.branches-7-10-2-amazonka-cloudsearch-domains]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-cloudsearch-domains"]]
+
+[build.branches-8-0-1-amazonka-cloudsearch-domains]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-cloudsearch-domains"]]
+
+[build.dist-7-10-2-amazonka-cloudtrail]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-cloudtrail"]]
+
+[build.dist-8-0-1-amazonka-cloudtrail]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-cloudtrail"]]
+
+[build.branches-7-10-2-amazonka-cloudtrail]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-cloudtrail"]]
+
+[build.branches-8-0-1-amazonka-cloudtrail]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-cloudtrail"]]
+
+[build.dist-7-10-2-amazonka-cloudwatch]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-cloudwatch"]]
+
+[build.dist-8-0-1-amazonka-cloudwatch]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-cloudwatch"]]
+
+[build.branches-7-10-2-amazonka-cloudwatch]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-cloudwatch"]]
+
+[build.branches-8-0-1-amazonka-cloudwatch]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-cloudwatch"]]
+
+[build.dist-7-10-2-amazonka-cloudwatch-events]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-cloudwatch-events"]]
+
+[build.dist-8-0-1-amazonka-cloudwatch-events]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-cloudwatch-events"]]
+
+[build.branches-7-10-2-amazonka-cloudwatch-events]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-cloudwatch-events"]]
+
+[build.branches-8-0-1-amazonka-cloudwatch-events]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-cloudwatch-events"]]
+
+[build.dist-7-10-2-amazonka-cloudwatch-logs]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-cloudwatch-logs"]]
+
+[build.dist-8-0-1-amazonka-cloudwatch-logs]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-cloudwatch-logs"]]
+
+[build.branches-7-10-2-amazonka-cloudwatch-logs]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-cloudwatch-logs"]]
+
+[build.branches-8-0-1-amazonka-cloudwatch-logs]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-cloudwatch-logs"]]
+
+[build.dist-7-10-2-amazonka-codebuild]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-codebuild"]]
+
+[build.dist-8-0-1-amazonka-codebuild]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-codebuild"]]
+
+[build.branches-7-10-2-amazonka-codebuild]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-codebuild"]]
+
+[build.branches-8-0-1-amazonka-codebuild]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-codebuild"]]
+
+[build.dist-7-10-2-amazonka-codecommit]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-codecommit"]]
+
+[build.dist-8-0-1-amazonka-codecommit]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-codecommit"]]
+
+[build.branches-7-10-2-amazonka-codecommit]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-codecommit"]]
+
+[build.branches-8-0-1-amazonka-codecommit]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-codecommit"]]
+
+[build.dist-7-10-2-amazonka-codedeploy]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-codedeploy"]]
+
+[build.dist-8-0-1-amazonka-codedeploy]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-codedeploy"]]
+
+[build.branches-7-10-2-amazonka-codedeploy]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-codedeploy"]]
+
+[build.branches-8-0-1-amazonka-codedeploy]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-codedeploy"]]
+
+[build.dist-7-10-2-amazonka-codepipeline]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-codepipeline"]]
+
+[build.dist-8-0-1-amazonka-codepipeline]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-codepipeline"]]
+
+[build.branches-7-10-2-amazonka-codepipeline]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-codepipeline"]]
+
+[build.branches-8-0-1-amazonka-codepipeline]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-codepipeline"]]
+
+[build.dist-7-10-2-amazonka-codestar]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-codestar"]]
+
+[build.dist-8-0-1-amazonka-codestar]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-codestar"]]
+
+[build.branches-7-10-2-amazonka-codestar]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-codestar"]]
+
+[build.branches-8-0-1-amazonka-codestar]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-codestar"]]
+
+[build.dist-7-10-2-amazonka-cognito-identity]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-cognito-identity"]]
+
+[build.dist-8-0-1-amazonka-cognito-identity]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-cognito-identity"]]
+
+[build.branches-7-10-2-amazonka-cognito-identity]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-cognito-identity"]]
+
+[build.branches-8-0-1-amazonka-cognito-identity]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-cognito-identity"]]
+
+[build.dist-7-10-2-amazonka-cognito-idp]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-cognito-idp"]]
+
+[build.dist-8-0-1-amazonka-cognito-idp]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-cognito-idp"]]
+
+[build.branches-7-10-2-amazonka-cognito-idp]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-cognito-idp"]]
+
+[build.branches-8-0-1-amazonka-cognito-idp]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-cognito-idp"]]
+
+[build.dist-7-10-2-amazonka-cognito-sync]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-cognito-sync"]]
+
+[build.dist-8-0-1-amazonka-cognito-sync]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-cognito-sync"]]
+
+[build.branches-7-10-2-amazonka-cognito-sync]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-cognito-sync"]]
+
+[build.branches-8-0-1-amazonka-cognito-sync]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-cognito-sync"]]
+
+[build.dist-7-10-2-amazonka-config]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-config"]]
+
+[build.dist-8-0-1-amazonka-config]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-config"]]
+
+[build.branches-7-10-2-amazonka-config]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-config"]]
+
+[build.branches-8-0-1-amazonka-config]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-config"]]
+
+[build.dist-7-10-2-amazonka-cur]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-cur"]]
+
+[build.dist-8-0-1-amazonka-cur]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-cur"]]
+
+[build.branches-7-10-2-amazonka-cur]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-cur"]]
+
+[build.branches-8-0-1-amazonka-cur]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-cur"]]
+
+[build.dist-7-10-2-amazonka-datapipeline]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-datapipeline"]]
+
+[build.dist-8-0-1-amazonka-datapipeline]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-datapipeline"]]
+
+[build.branches-7-10-2-amazonka-datapipeline]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-datapipeline"]]
+
+[build.branches-8-0-1-amazonka-datapipeline]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-datapipeline"]]
+
+[build.dist-7-10-2-amazonka-dax]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-dax"]]
+
+[build.dist-8-0-1-amazonka-dax]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-dax"]]
+
+[build.branches-7-10-2-amazonka-dax]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-dax"]]
+
+[build.branches-8-0-1-amazonka-dax]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-dax"]]
+
+[build.dist-7-10-2-amazonka-devicefarm]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-devicefarm"]]
+
+[build.dist-8-0-1-amazonka-devicefarm]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-devicefarm"]]
+
+[build.branches-7-10-2-amazonka-devicefarm]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-devicefarm"]]
+
+[build.branches-8-0-1-amazonka-devicefarm]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-devicefarm"]]
+
+[build.dist-7-10-2-amazonka-directconnect]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-directconnect"]]
+
+[build.dist-8-0-1-amazonka-directconnect]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-directconnect"]]
+
+[build.branches-7-10-2-amazonka-directconnect]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-directconnect"]]
+
+[build.branches-8-0-1-amazonka-directconnect]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-directconnect"]]
+
+[build.dist-7-10-2-amazonka-discovery]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-discovery"]]
+
+[build.dist-8-0-1-amazonka-discovery]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-discovery"]]
+
+[build.branches-7-10-2-amazonka-discovery]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-discovery"]]
+
+[build.branches-8-0-1-amazonka-discovery]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-discovery"]]
+
+[build.dist-7-10-2-amazonka-dms]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-dms"]]
+
+[build.dist-8-0-1-amazonka-dms]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-dms"]]
+
+[build.branches-7-10-2-amazonka-dms]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-dms"]]
+
+[build.branches-8-0-1-amazonka-dms]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-dms"]]
+
+[build.dist-7-10-2-amazonka-ds]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-ds"]]
+
+[build.dist-8-0-1-amazonka-ds]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-ds"]]
+
+[build.branches-7-10-2-amazonka-ds]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-ds"]]
+
+[build.branches-8-0-1-amazonka-ds]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-ds"]]
+
+[build.dist-7-10-2-amazonka-dynamodb]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-dynamodb"]]
+
+[build.dist-8-0-1-amazonka-dynamodb]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-dynamodb"]]
+
+[build.branches-7-10-2-amazonka-dynamodb]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-dynamodb"]]
+
+[build.branches-8-0-1-amazonka-dynamodb]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-dynamodb"]]
+
+[build.dist-7-10-2-amazonka-dynamodb-dax]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-dynamodb-dax"]]
+
+[build.dist-8-0-1-amazonka-dynamodb-dax]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-dynamodb-dax"]]
+
+[build.branches-7-10-2-amazonka-dynamodb-dax]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-dynamodb-dax"]]
+
+[build.branches-8-0-1-amazonka-dynamodb-dax]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-dynamodb-dax"]]
+
+[build.dist-7-10-2-amazonka-dynamodb-streams]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-dynamodb-streams"]]
+
+[build.dist-8-0-1-amazonka-dynamodb-streams]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-dynamodb-streams"]]
+
+[build.branches-7-10-2-amazonka-dynamodb-streams]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-dynamodb-streams"]]
+
+[build.branches-8-0-1-amazonka-dynamodb-streams]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-dynamodb-streams"]]
+
+[build.dist-7-10-2-amazonka-ec2]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-ec2"]]
+
+[build.dist-8-0-1-amazonka-ec2]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-ec2"]]
+
+[build.branches-7-10-2-amazonka-ec2]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-ec2"]]
+
+[build.branches-8-0-1-amazonka-ec2]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-ec2"]]
+
+[build.dist-7-10-2-amazonka-ecr]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-ecr"]]
+
+[build.dist-8-0-1-amazonka-ecr]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-ecr"]]
+
+[build.branches-7-10-2-amazonka-ecr]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-ecr"]]
+
+[build.branches-8-0-1-amazonka-ecr]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-ecr"]]
+
+[build.dist-7-10-2-amazonka-ecs]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-ecs"]]
+
+[build.dist-8-0-1-amazonka-ecs]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-ecs"]]
+
+[build.branches-7-10-2-amazonka-ecs]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-ecs"]]
+
+[build.branches-8-0-1-amazonka-ecs]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-ecs"]]
+
+[build.dist-7-10-2-amazonka-efs]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-efs"]]
+
+[build.dist-8-0-1-amazonka-efs]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-efs"]]
+
+[build.branches-7-10-2-amazonka-efs]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-efs"]]
+
+[build.branches-8-0-1-amazonka-efs]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-efs"]]
+
+[build.dist-7-10-2-amazonka-elasticache]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-elasticache"]]
+
+[build.dist-8-0-1-amazonka-elasticache]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-elasticache"]]
+
+[build.branches-7-10-2-amazonka-elasticache]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-elasticache"]]
+
+[build.branches-8-0-1-amazonka-elasticache]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-elasticache"]]
+
+[build.dist-7-10-2-amazonka-elasticbeanstalk]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-elasticbeanstalk"]]
+
+[build.dist-8-0-1-amazonka-elasticbeanstalk]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-elasticbeanstalk"]]
+
+[build.branches-7-10-2-amazonka-elasticbeanstalk]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-elasticbeanstalk"]]
+
+[build.branches-8-0-1-amazonka-elasticbeanstalk]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-elasticbeanstalk"]]
+
+[build.dist-7-10-2-amazonka-elasticsearch]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-elasticsearch"]]
+
+[build.dist-8-0-1-amazonka-elasticsearch]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-elasticsearch"]]
+
+[build.branches-7-10-2-amazonka-elasticsearch]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-elasticsearch"]]
+
+[build.branches-8-0-1-amazonka-elasticsearch]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-elasticsearch"]]
+
+[build.dist-7-10-2-amazonka-elastictranscoder]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-elastictranscoder"]]
+
+[build.dist-8-0-1-amazonka-elastictranscoder]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-elastictranscoder"]]
+
+[build.branches-7-10-2-amazonka-elastictranscoder]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-elastictranscoder"]]
+
+[build.branches-8-0-1-amazonka-elastictranscoder]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-elastictranscoder"]]
+
+[build.dist-7-10-2-amazonka-elb]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-elb"]]
+
+[build.dist-8-0-1-amazonka-elb]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-elb"]]
+
+[build.branches-7-10-2-amazonka-elb]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-elb"]]
+
+[build.branches-8-0-1-amazonka-elb]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-elb"]]
+
+[build.dist-7-10-2-amazonka-elbv2]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-elbv2"]]
+
+[build.dist-8-0-1-amazonka-elbv2]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-elbv2"]]
+
+[build.branches-7-10-2-amazonka-elbv2]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-elbv2"]]
+
+[build.branches-8-0-1-amazonka-elbv2]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-elbv2"]]
+
+[build.dist-7-10-2-amazonka-emr]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-emr"]]
+
+[build.dist-8-0-1-amazonka-emr]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-emr"]]
+
+[build.branches-7-10-2-amazonka-emr]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-emr"]]
+
+[build.branches-8-0-1-amazonka-emr]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-emr"]]
+
+[build.dist-7-10-2-amazonka-gamelift]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-gamelift"]]
+
+[build.dist-8-0-1-amazonka-gamelift]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-gamelift"]]
+
+[build.branches-7-10-2-amazonka-gamelift]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-gamelift"]]
+
+[build.branches-8-0-1-amazonka-gamelift]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-gamelift"]]
+
+[build.dist-7-10-2-amazonka-glacier]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-glacier"]]
+
+[build.dist-8-0-1-amazonka-glacier]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-glacier"]]
+
+[build.branches-7-10-2-amazonka-glacier]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-glacier"]]
+
+[build.branches-8-0-1-amazonka-glacier]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-glacier"]]
+
+[build.dist-7-10-2-amazonka-glue]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-glue"]]
+
+[build.dist-8-0-1-amazonka-glue]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-glue"]]
+
+[build.branches-7-10-2-amazonka-glue]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-glue"]]
+
+[build.branches-8-0-1-amazonka-glue]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-glue"]]
+
+[build.dist-7-10-2-amazonka-greengrass]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-greengrass"]]
+
+[build.dist-8-0-1-amazonka-greengrass]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-greengrass"]]
+
+[build.branches-7-10-2-amazonka-greengrass]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-greengrass"]]
+
+[build.branches-8-0-1-amazonka-greengrass]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-greengrass"]]
+
+[build.dist-7-10-2-amazonka-health]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-health"]]
+
+[build.dist-8-0-1-amazonka-health]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-health"]]
+
+[build.branches-7-10-2-amazonka-health]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-health"]]
+
+[build.branches-8-0-1-amazonka-health]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-health"]]
+
+[build.dist-7-10-2-amazonka-iam]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-iam"]]
+
+[build.dist-8-0-1-amazonka-iam]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-iam"]]
+
+[build.branches-7-10-2-amazonka-iam]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-iam"]]
+
+[build.branches-8-0-1-amazonka-iam]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-iam"]]
+
+[build.dist-7-10-2-amazonka-importexport]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-importexport"]]
+
+[build.dist-8-0-1-amazonka-importexport]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-importexport"]]
+
+[build.branches-7-10-2-amazonka-importexport]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-importexport"]]
+
+[build.branches-8-0-1-amazonka-importexport]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-importexport"]]
+
+[build.dist-7-10-2-amazonka-inspector]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-inspector"]]
+
+[build.dist-8-0-1-amazonka-inspector]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-inspector"]]
+
+[build.branches-7-10-2-amazonka-inspector]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-inspector"]]
+
+[build.branches-8-0-1-amazonka-inspector]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-inspector"]]
+
+[build.dist-7-10-2-amazonka-iot]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-iot"]]
+
+[build.dist-8-0-1-amazonka-iot]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-iot"]]
+
+[build.branches-7-10-2-amazonka-iot]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-iot"]]
+
+[build.branches-8-0-1-amazonka-iot]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-iot"]]
+
+[build.dist-7-10-2-amazonka-iot-dataplane]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-iot-dataplane"]]
+
+[build.dist-8-0-1-amazonka-iot-dataplane]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-iot-dataplane"]]
+
+[build.branches-7-10-2-amazonka-iot-dataplane]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-iot-dataplane"]]
+
+[build.branches-8-0-1-amazonka-iot-dataplane]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-iot-dataplane"]]
+
+[build.dist-7-10-2-amazonka-kinesis]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-kinesis"]]
+
+[build.dist-8-0-1-amazonka-kinesis]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-kinesis"]]
+
+[build.branches-7-10-2-amazonka-kinesis]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-kinesis"]]
+
+[build.branches-8-0-1-amazonka-kinesis]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-kinesis"]]
+
+[build.dist-7-10-2-amazonka-kinesis-analytics]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-kinesis-analytics"]]
+
+[build.dist-8-0-1-amazonka-kinesis-analytics]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-kinesis-analytics"]]
+
+[build.branches-7-10-2-amazonka-kinesis-analytics]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-kinesis-analytics"]]
+
+[build.branches-8-0-1-amazonka-kinesis-analytics]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-kinesis-analytics"]]
+
+[build.dist-7-10-2-amazonka-kinesis-firehose]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-kinesis-firehose"]]
+
+[build.dist-8-0-1-amazonka-kinesis-firehose]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-kinesis-firehose"]]
+
+[build.branches-7-10-2-amazonka-kinesis-firehose]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-kinesis-firehose"]]
+
+[build.branches-8-0-1-amazonka-kinesis-firehose]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-kinesis-firehose"]]
+
+[build.dist-7-10-2-amazonka-kms]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-kms"]]
+
+[build.dist-8-0-1-amazonka-kms]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-kms"]]
+
+[build.branches-7-10-2-amazonka-kms]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-kms"]]
+
+[build.branches-8-0-1-amazonka-kms]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-kms"]]
+
+[build.dist-7-10-2-amazonka-lambda]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-lambda"]]
+
+[build.dist-8-0-1-amazonka-lambda]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-lambda"]]
+
+[build.branches-7-10-2-amazonka-lambda]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-lambda"]]
+
+[build.branches-8-0-1-amazonka-lambda]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-lambda"]]
+
+[build.dist-7-10-2-amazonka-lex-models]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-lex-models"]]
+
+[build.dist-8-0-1-amazonka-lex-models]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-lex-models"]]
+
+[build.branches-7-10-2-amazonka-lex-models]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-lex-models"]]
+
+[build.branches-8-0-1-amazonka-lex-models]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-lex-models"]]
+
+[build.dist-7-10-2-amazonka-lex-runtime]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-lex-runtime"]]
+
+[build.dist-8-0-1-amazonka-lex-runtime]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-lex-runtime"]]
+
+[build.branches-7-10-2-amazonka-lex-runtime]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-lex-runtime"]]
+
+[build.branches-8-0-1-amazonka-lex-runtime]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-lex-runtime"]]
+
+[build.dist-7-10-2-amazonka-lightsail]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-lightsail"]]
+
+[build.dist-8-0-1-amazonka-lightsail]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-lightsail"]]
+
+[build.branches-7-10-2-amazonka-lightsail]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-lightsail"]]
+
+[build.branches-8-0-1-amazonka-lightsail]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-lightsail"]]
+
+[build.dist-7-10-2-amazonka-marketplace-analytics]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-marketplace-analytics"]]
+
+[build.dist-8-0-1-amazonka-marketplace-analytics]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-marketplace-analytics"]]
+
+[build.branches-7-10-2-amazonka-marketplace-analytics]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-marketplace-analytics"]]
+
+[build.branches-8-0-1-amazonka-marketplace-analytics]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-marketplace-analytics"]]
+
+[build.dist-7-10-2-amazonka-marketplace-entitlement]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-marketplace-entitlement"]]
+
+[build.dist-8-0-1-amazonka-marketplace-entitlement]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-marketplace-entitlement"]]
+
+[build.branches-7-10-2-amazonka-marketplace-entitlement]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-marketplace-entitlement"]]
+
+[build.branches-8-0-1-amazonka-marketplace-entitlement]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-marketplace-entitlement"]]
+
+[build.dist-7-10-2-amazonka-marketplace-metering]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-marketplace-metering"]]
+
+[build.dist-8-0-1-amazonka-marketplace-metering]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-marketplace-metering"]]
+
+[build.branches-7-10-2-amazonka-marketplace-metering]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-marketplace-metering"]]
+
+[build.branches-8-0-1-amazonka-marketplace-metering]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-marketplace-metering"]]
+
+[build.dist-7-10-2-amazonka-mechanicalturk]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-mechanicalturk"]]
+
+[build.dist-8-0-1-amazonka-mechanicalturk]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-mechanicalturk"]]
+
+[build.branches-7-10-2-amazonka-mechanicalturk]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-mechanicalturk"]]
+
+[build.branches-8-0-1-amazonka-mechanicalturk]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-mechanicalturk"]]
+
+[build.dist-7-10-2-amazonka-migrationhub]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-migrationhub"]]
+
+[build.dist-8-0-1-amazonka-migrationhub]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-migrationhub"]]
+
+[build.branches-7-10-2-amazonka-migrationhub]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-migrationhub"]]
+
+[build.branches-8-0-1-amazonka-migrationhub]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-migrationhub"]]
+
+[build.dist-7-10-2-amazonka-ml]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-ml"]]
+
+[build.dist-8-0-1-amazonka-ml]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-ml"]]
+
+[build.branches-7-10-2-amazonka-ml]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-ml"]]
+
+[build.branches-8-0-1-amazonka-ml]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-ml"]]
+
+[build.dist-7-10-2-amazonka-mobile]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-mobile"]]
+
+[build.dist-8-0-1-amazonka-mobile]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-mobile"]]
+
+[build.branches-7-10-2-amazonka-mobile]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-mobile"]]
+
+[build.branches-8-0-1-amazonka-mobile]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-mobile"]]
+
+[build.dist-7-10-2-amazonka-opsworks]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-opsworks"]]
+
+[build.dist-8-0-1-amazonka-opsworks]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-opsworks"]]
+
+[build.branches-7-10-2-amazonka-opsworks]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-opsworks"]]
+
+[build.branches-8-0-1-amazonka-opsworks]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-opsworks"]]
+
+[build.dist-7-10-2-amazonka-opsworks-cm]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-opsworks-cm"]]
+
+[build.dist-8-0-1-amazonka-opsworks-cm]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-opsworks-cm"]]
+
+[build.branches-7-10-2-amazonka-opsworks-cm]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-opsworks-cm"]]
+
+[build.branches-8-0-1-amazonka-opsworks-cm]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-opsworks-cm"]]
+
+[build.dist-7-10-2-amazonka-organizations]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-organizations"]]
+
+[build.dist-8-0-1-amazonka-organizations]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-organizations"]]
+
+[build.branches-7-10-2-amazonka-organizations]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-organizations"]]
+
+[build.branches-8-0-1-amazonka-organizations]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-organizations"]]
+
+[build.dist-7-10-2-amazonka-pinpoint]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-pinpoint"]]
+
+[build.dist-8-0-1-amazonka-pinpoint]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-pinpoint"]]
+
+[build.branches-7-10-2-amazonka-pinpoint]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-pinpoint"]]
+
+[build.branches-8-0-1-amazonka-pinpoint]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-pinpoint"]]
+
+[build.dist-7-10-2-amazonka-polly]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-polly"]]
+
+[build.dist-8-0-1-amazonka-polly]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-polly"]]
+
+[build.branches-7-10-2-amazonka-polly]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-polly"]]
+
+[build.branches-8-0-1-amazonka-polly]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-polly"]]
+
+[build.dist-7-10-2-amazonka-pricing]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-pricing"]]
+
+[build.dist-8-0-1-amazonka-pricing]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-pricing"]]
+
+[build.branches-7-10-2-amazonka-pricing]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-pricing"]]
+
+[build.branches-8-0-1-amazonka-pricing]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-pricing"]]
+
+[build.dist-7-10-2-amazonka-rds]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-rds"]]
+
+[build.dist-8-0-1-amazonka-rds]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-rds"]]
+
+[build.branches-7-10-2-amazonka-rds]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-rds"]]
+
+[build.branches-8-0-1-amazonka-rds]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-rds"]]
+
+[build.dist-7-10-2-amazonka-redshift]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-redshift"]]
+
+[build.dist-8-0-1-amazonka-redshift]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-redshift"]]
+
+[build.branches-7-10-2-amazonka-redshift]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-redshift"]]
+
+[build.branches-8-0-1-amazonka-redshift]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-redshift"]]
+
+[build.dist-7-10-2-amazonka-rekognition]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-rekognition"]]
+
+[build.dist-8-0-1-amazonka-rekognition]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-rekognition"]]
+
+[build.branches-7-10-2-amazonka-rekognition]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-rekognition"]]
+
+[build.branches-8-0-1-amazonka-rekognition]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-rekognition"]]
+
+[build.dist-7-10-2-amazonka-resourcegroupstagging]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-resourcegroupstagging"]]
+
+[build.dist-8-0-1-amazonka-resourcegroupstagging]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-resourcegroupstagging"]]
+
+[build.branches-7-10-2-amazonka-resourcegroupstagging]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-resourcegroupstagging"]]
+
+[build.branches-8-0-1-amazonka-resourcegroupstagging]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-resourcegroupstagging"]]
+
+[build.dist-7-10-2-amazonka-route53]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-route53"]]
+
+[build.dist-8-0-1-amazonka-route53]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-route53"]]
+
+[build.branches-7-10-2-amazonka-route53]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-route53"]]
+
+[build.branches-8-0-1-amazonka-route53]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-route53"]]
+
+[build.dist-7-10-2-amazonka-route53-domains]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-route53-domains"]]
+
+[build.dist-8-0-1-amazonka-route53-domains]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-route53-domains"]]
+
+[build.branches-7-10-2-amazonka-route53-domains]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-route53-domains"]]
+
+[build.branches-8-0-1-amazonka-route53-domains]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-route53-domains"]]
+
+[build.dist-7-10-2-amazonka-s3]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-s3"]]
+
+[build.dist-8-0-1-amazonka-s3]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-s3"]]
+
+[build.branches-7-10-2-amazonka-s3]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-s3"]]
+
+[build.branches-8-0-1-amazonka-s3]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-s3"]]
+
+[build.dist-7-10-2-amazonka-s3-encryption]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-s3-encryption"]]
+
+[build.dist-8-0-1-amazonka-s3-encryption]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-s3-encryption"]]
+
+[build.branches-7-10-2-amazonka-s3-encryption]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-s3-encryption"]]
+
+[build.branches-8-0-1-amazonka-s3-encryption]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-s3-encryption"]]
+
+[build.dist-7-10-2-amazonka-sdb]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-sdb"]]
+
+[build.dist-8-0-1-amazonka-sdb]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-sdb"]]
+
+[build.branches-7-10-2-amazonka-sdb]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-sdb"]]
+
+[build.branches-8-0-1-amazonka-sdb]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-sdb"]]
+
+[build.dist-7-10-2-amazonka-servicecatalog]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-servicecatalog"]]
+
+[build.dist-8-0-1-amazonka-servicecatalog]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-servicecatalog"]]
+
+[build.branches-7-10-2-amazonka-servicecatalog]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-servicecatalog"]]
+
+[build.branches-8-0-1-amazonka-servicecatalog]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-servicecatalog"]]
+
+[build.dist-7-10-2-amazonka-ses]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-ses"]]
+
+[build.dist-8-0-1-amazonka-ses]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-ses"]]
+
+[build.branches-7-10-2-amazonka-ses]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-ses"]]
+
+[build.branches-8-0-1-amazonka-ses]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-ses"]]
+
+[build.dist-7-10-2-amazonka-shield]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-shield"]]
+
+[build.dist-8-0-1-amazonka-shield]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-shield"]]
+
+[build.branches-7-10-2-amazonka-shield]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-shield"]]
+
+[build.branches-8-0-1-amazonka-shield]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-shield"]]
+
+[build.dist-7-10-2-amazonka-sms]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-sms"]]
+
+[build.dist-8-0-1-amazonka-sms]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-sms"]]
+
+[build.branches-7-10-2-amazonka-sms]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-sms"]]
+
+[build.branches-8-0-1-amazonka-sms]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-sms"]]
+
+[build.dist-7-10-2-amazonka-snowball]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-snowball"]]
+
+[build.dist-8-0-1-amazonka-snowball]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-snowball"]]
+
+[build.branches-7-10-2-amazonka-snowball]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-snowball"]]
+
+[build.branches-8-0-1-amazonka-snowball]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-snowball"]]
+
+[build.dist-7-10-2-amazonka-sns]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-sns"]]
+
+[build.dist-8-0-1-amazonka-sns]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-sns"]]
+
+[build.branches-7-10-2-amazonka-sns]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-sns"]]
+
+[build.branches-8-0-1-amazonka-sns]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-sns"]]
+
+[build.dist-7-10-2-amazonka-sqs]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-sqs"]]
+
+[build.dist-8-0-1-amazonka-sqs]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-sqs"]]
+
+[build.branches-7-10-2-amazonka-sqs]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-sqs"]]
+
+[build.branches-8-0-1-amazonka-sqs]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-sqs"]]
+
+[build.dist-7-10-2-amazonka-ssm]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-ssm"]]
+
+[build.dist-8-0-1-amazonka-ssm]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-ssm"]]
+
+[build.branches-7-10-2-amazonka-ssm]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-ssm"]]
+
+[build.branches-8-0-1-amazonka-ssm]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-ssm"]]
+
+[build.dist-7-10-2-amazonka-stepfunctions]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-stepfunctions"]]
+
+[build.dist-8-0-1-amazonka-stepfunctions]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-stepfunctions"]]
+
+[build.branches-7-10-2-amazonka-stepfunctions]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-stepfunctions"]]
+
+[build.branches-8-0-1-amazonka-stepfunctions]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-stepfunctions"]]
+
+[build.dist-7-10-2-amazonka-storagegateway]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-storagegateway"]]
+
+[build.dist-8-0-1-amazonka-storagegateway]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-storagegateway"]]
+
+[build.branches-7-10-2-amazonka-storagegateway]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-storagegateway"]]
+
+[build.branches-8-0-1-amazonka-storagegateway]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-storagegateway"]]
+
+[build.dist-7-10-2-amazonka-sts]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-sts"]]
+
+[build.dist-8-0-1-amazonka-sts]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-sts"]]
+
+[build.branches-7-10-2-amazonka-sts]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-sts"]]
+
+[build.branches-8-0-1-amazonka-sts]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-sts"]]
+
+[build.dist-7-10-2-amazonka-support]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-support"]]
+
+[build.dist-8-0-1-amazonka-support]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-support"]]
+
+[build.branches-7-10-2-amazonka-support]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-support"]]
+
+[build.branches-8-0-1-amazonka-support]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-support"]]
+
+[build.dist-7-10-2-amazonka-swf]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-swf"]]
+
+[build.dist-8-0-1-amazonka-swf]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-swf"]]
+
+[build.branches-7-10-2-amazonka-swf]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-swf"]]
+
+[build.branches-8-0-1-amazonka-swf]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-swf"]]
+
+[build.dist-7-10-2-amazonka-waf]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-waf"]]
+
+[build.dist-8-0-1-amazonka-waf]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-waf"]]
+
+[build.branches-7-10-2-amazonka-waf]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-waf"]]
+
+[build.branches-8-0-1-amazonka-waf]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-waf"]]
+
+[build.dist-7-10-2-amazonka-waf-regional]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-waf-regional"]]
+
+[build.dist-8-0-1-amazonka-waf-regional]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-waf-regional"]]
+
+[build.branches-7-10-2-amazonka-waf-regional]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-waf-regional"]]
+
+[build.branches-8-0-1-amazonka-waf-regional]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-waf-regional"]]
+
+[build.dist-7-10-2-amazonka-workdocs]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-workdocs"]]
+
+[build.dist-8-0-1-amazonka-workdocs]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-workdocs"]]
+
+[build.branches-7-10-2-amazonka-workdocs]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-workdocs"]]
+
+[build.branches-8-0-1-amazonka-workdocs]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-workdocs"]]
+
+[build.dist-7-10-2-amazonka-workspaces]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-workspaces"]]
+
+[build.dist-8-0-1-amazonka-workspaces]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-workspaces"]]
+
+[build.branches-7-10-2-amazonka-workspaces]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-workspaces"]]
+
+[build.branches-8-0-1-amazonka-workspaces]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-workspaces"]]
+
+[build.dist-7-10-2-amazonka-xray]
+  command = [["master", "build", "dist-7-10", "-C", "amazonka-xray"]]
+
+[build.dist-8-0-1-amazonka-xray]
+  command = [["master", "build", "dist-8-0", "-C", "amazonka-xray"]]
+
+[build.branches-7-10-2-amazonka-xray]
+  command = [["master", "build", "branches-7-10", "-C", "amazonka-xray"]]
+
+[build.branches-8-0-1-amazonka-xray]
+  command = [["master", "build", "branches-8-0", "-C", "amazonka-xray"]]
+[build.dist-validate]
+  command = [["validate-respect"]]
+
+[build.all-submodules]
+  command = [["dangling-refs"]]
+
+[build.all-rebased]
+  command = [["env", "BASE_BRANCH=ambiata", "rebased"]]
