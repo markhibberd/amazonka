@@ -6,7 +6,8 @@ PROJECTS=$(ls $ROOT | grep amazonka)
 SETUP=$ROOT/bin/boris
 
 for PROJECT in $PROJECTS; do
-  echo cp $SETUP/master $ROOT/$PROJECT/master.toml
+  cp $SETUP/master $ROOT/$PROJECT/master.toml
+  ln -sf ../bin/boris/mafia $PROJECT/mafia
 done
 
 cat <<EOF > $ROOT/boris-git.toml
@@ -53,5 +54,5 @@ $THINGS
   command = [["dangling-refs"]]
 
 [build.all-rebased]
-  command = [["rebased"]]
+  command = [["env", "BASE_BRANCH=ambiata", "rebased"]]
 EOF
