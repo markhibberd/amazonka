@@ -466,13 +466,14 @@ clientRequest e t =
     , Client.host            = _endpointHost   e
     , Client.port            = _endpointPort   e
     , Client.redirectCount   = 0
-    , Client.responseTimeout =
 #if MIN_VERSION_http_client(0,5,0)
+    , Client.responseTimeout =
         case t of
             Nothing -> Client.responseTimeoutNone
             Just x  -> Client.responseTimeoutMicro (microseconds x)
 #else
-        microseconds <$> t
+    , Client.checkStatus     = \_ _ _ -> Nothing
+    , Client.responseTimeout = microseconds <$> t
 #endif
     }
 

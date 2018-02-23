@@ -26,6 +26,9 @@ import           Network.AWS.Data.Headers
 import           Network.AWS.Data.Text
 import           Network.AWS.Data.XML
 import           Network.AWS.Lens            (Choice, Getting, Optic', filtered)
+#if ! MIN_VERSION_http_client(0,5,0)
+import           Network.AWS.Lens            ((<&>))
+#endif
 import           Network.AWS.Types
 import           Network.HTTP.Conduit
 import           Network.HTTP.Types.Status   (Status (..))
@@ -68,10 +71,7 @@ httpStatus = _Error . f
         TransportError (HttpExceptionRequest rq (StatusCodeException rs b))
             -> (\x -> TransportError (HttpExceptionRequest rq (StatusCodeException (rs { responseStatus = x }) b)))
                <$> g (responseStatus rs)
-#else
-        TransportError (StatusCodeException s h c)
-            -> TransportError <$> (StatusCodeException <$> g s <*> pure h <*> pure c)
-#endif
+
         TransportError e
             -> pure (TransportError e)
 
@@ -81,6 +81,16 @@ httpStatus = _Error . f
         ServiceError e
             -> (\x -> ServiceError (e { _serviceStatus = x }))
                <$> g (_serviceStatus e)
+#else
+        TransportError (StatusCodeException s h c)
+            -> TransportError <$> (StatusCodeException <$> g s <*> pure h <*> pure c)
+        TransportError e
+            -> pure (TransportError e)
+        SerializeError (SerializeError' a s b e)
+            -> g s <&> \x -> SerializeError (SerializeError' a x b e)
+        ServiceError e
+            -> g (_serviceStatus e) <&> \x -> ServiceError (e { _serviceStatus = x })
+#endif
 
 hasService :: (Applicative f, Choice p)
            => Service
