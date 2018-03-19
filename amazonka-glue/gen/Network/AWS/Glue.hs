@@ -181,6 +181,8 @@ module Network.AWS.Glue
 
     -- ** ResetJobBookmark
     , module Network.AWS.Glue.ResetJobBookmark
+    -- ** ResetJobBookmark
+    , module Network.AWS.Glue.GetJobBookmark
 
     -- ** DeleteJob
     , module Network.AWS.Glue.DeleteJob
@@ -938,6 +940,7 @@ import Network.AWS.Glue.GetTriggers
 import Network.AWS.Glue.GetUserDefinedFunction
 import Network.AWS.Glue.GetUserDefinedFunctions
 import Network.AWS.Glue.ImportCatalogToGlue
+import Network.AWS.Glue.GetJobBookmark
 import Network.AWS.Glue.ResetJobBookmark
 import Network.AWS.Glue.StartCrawler
 import Network.AWS.Glue.StartCrawlerSchedule

@@ -102,6 +102,7 @@ library
         , Network.AWS.Glue.GetUserDefinedFunctions
         , Network.AWS.Glue.ImportCatalogToGlue
         , Network.AWS.Glue.ResetJobBookmark
+        , Network.AWS.Glue.GetJobBookmark
         , Network.AWS.Glue.StartCrawler
         , Network.AWS.Glue.StartCrawlerSchedule
         , Network.AWS.Glue.StartJobRun
