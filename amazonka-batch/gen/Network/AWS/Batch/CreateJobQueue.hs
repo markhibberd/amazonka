@@ -52,9 +52,9 @@ import Network.AWS.Response
 
 -- | /See:/ 'createJobQueue' smart constructor.
 data CreateJobQueue = CreateJobQueue'
-  { _cjqState                   :: !(Maybe JQState)
-  , _cjqJobQueueName            :: !Text
-  , _cjqPriority                :: !Int
+  { _cjqState :: !(Maybe JQState)
+  , _cjqJobQueueName :: !Text
+  , _cjqPriority :: !Int
   , _cjqComputeEnvironmentOrder :: ![ComputeEnvironmentOrder]
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
@@ -69,7 +69,7 @@ data CreateJobQueue = CreateJobQueue'
 --
 -- * 'cjqPriority' - The priority of the job queue. Job queues with a higher priority (or a higher integer value for the @priority@ parameter) are evaluated first when associated with same compute environment. Priority is determined in descending order, for example, a job queue with a priority value of @10@ is given scheduling preference over a job queue with a priority value of @1@ .
 --
--- * 'cjqComputeEnvironmentOrder' - The set of compute environments mapped to a job queue and their order relative to each other. The job scheduler uses this parameter to determine which compute environment should execute a given job. Compute environments must be in the @VALID@ state before you can associate them with a job queue. You can associate up to 3 compute environments with a job queue.
+-- * 'cjqComputeEnvironmentOrder' - The set of compute environments mapped to a job queue and their order relative to each other. The job scheduler uses this parameter to determine which compute environment should execute a given job. Compute environments must be in the @VALID@ state before you can associate them with a job queue. You can associate up to three compute environments with a job queue.
 createJobQueue
     :: Text -- ^ 'cjqJobQueueName'
     -> Int -- ^ 'cjqPriority'
@@ -95,7 +95,7 @@ cjqJobQueueName = lens _cjqJobQueueName (\ s a -> s{_cjqJobQueueName = a});
 cjqPriority :: Lens' CreateJobQueue Int
 cjqPriority = lens _cjqPriority (\ s a -> s{_cjqPriority = a});
 
--- | The set of compute environments mapped to a job queue and their order relative to each other. The job scheduler uses this parameter to determine which compute environment should execute a given job. Compute environments must be in the @VALID@ state before you can associate them with a job queue. You can associate up to 3 compute environments with a job queue.
+-- | The set of compute environments mapped to a job queue and their order relative to each other. The job scheduler uses this parameter to determine which compute environment should execute a given job. Compute environments must be in the @VALID@ state before you can associate them with a job queue. You can associate up to three compute environments with a job queue.
 cjqComputeEnvironmentOrder :: Lens' CreateJobQueue [ComputeEnvironmentOrder]
 cjqComputeEnvironmentOrder = lens _cjqComputeEnvironmentOrder (\ s a -> s{_cjqComputeEnvironmentOrder = a}) . _Coerce;
 
@@ -140,8 +140,8 @@ instance ToQuery CreateJobQueue where
 -- | /See:/ 'createJobQueueResponse' smart constructor.
 data CreateJobQueueResponse = CreateJobQueueResponse'
   { _cjqrsResponseStatus :: !Int
-  , _cjqrsJobQueueName   :: !Text
-  , _cjqrsJobQueueARN    :: !Text
+  , _cjqrsJobQueueName :: !Text
+  , _cjqrsJobQueueARN :: !Text
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
 

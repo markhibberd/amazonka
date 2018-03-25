@@ -36,55 +36,58 @@ module Network.AWS.Batch
     -- * Operations
     -- $operations
 
-    -- ** CreateComputeEnvironment
+    -- ** CreateComputeEnvironment 
     , module Network.AWS.Batch.CreateComputeEnvironment
 
-    -- ** RegisterJobDefinition
+    -- ** RegisterJobDefinition 
     , module Network.AWS.Batch.RegisterJobDefinition
 
-    -- ** SubmitJob
+    -- ** SubmitJob 
     , module Network.AWS.Batch.SubmitJob
 
-    -- ** ListJobs
+    -- ** ListJobs 
     , module Network.AWS.Batch.ListJobs
 
-    -- ** TerminateJob
+    -- ** TerminateJob 
     , module Network.AWS.Batch.TerminateJob
 
-    -- ** DescribeJobs
+    -- ** DescribeJobs 
     , module Network.AWS.Batch.DescribeJobs
 
-    -- ** DeleteComputeEnvironment
+    -- ** DeleteComputeEnvironment 
     , module Network.AWS.Batch.DeleteComputeEnvironment
 
-    -- ** UpdateComputeEnvironment
+    -- ** UpdateComputeEnvironment 
     , module Network.AWS.Batch.UpdateComputeEnvironment
 
-    -- ** DescribeJobDefinitions
+    -- ** DescribeJobDefinitions 
     , module Network.AWS.Batch.DescribeJobDefinitions
 
-    -- ** UpdateJobQueue
+    -- ** UpdateJobQueue 
     , module Network.AWS.Batch.UpdateJobQueue
 
-    -- ** DeleteJobQueue
+    -- ** DeleteJobQueue 
     , module Network.AWS.Batch.DeleteJobQueue
 
-    -- ** CreateJobQueue
+    -- ** CreateJobQueue 
     , module Network.AWS.Batch.CreateJobQueue
 
-    -- ** DeregisterJobDefinition
+    -- ** DeregisterJobDefinition 
     , module Network.AWS.Batch.DeregisterJobDefinition
 
-    -- ** DescribeJobQueues
+    -- ** DescribeJobQueues 
     , module Network.AWS.Batch.DescribeJobQueues
 
-    -- ** DescribeComputeEnvironments
+    -- ** DescribeComputeEnvironments 
     , module Network.AWS.Batch.DescribeComputeEnvironments
 
-    -- ** CancelJob
+    -- ** CancelJob 
     , module Network.AWS.Batch.CancelJob
 
     -- * Types
+
+    -- ** ArrayJobDependency
+    , ArrayJobDependency (..)
 
     -- ** CEState
     , CEState (..)
@@ -109,6 +112,24 @@ module Network.AWS.Batch
 
     -- ** JobStatus
     , JobStatus (..)
+
+    -- ** ArrayProperties
+    , ArrayProperties
+    , arrayProperties
+    , apSize
+
+    -- ** ArrayPropertiesDetail
+    , ArrayPropertiesDetail
+    , arrayPropertiesDetail
+    , apdSize
+    , apdStatusSummary
+    , apdIndex
+
+    -- ** ArrayPropertiesSummary
+    , ArrayPropertiesSummary
+    , arrayPropertiesSummary
+    , apsSize
+    , apsIndex
 
     -- ** AttemptContainerDetail
     , AttemptContainerDetail
@@ -215,6 +236,12 @@ module Network.AWS.Batch
     , cpVcpus
     , cpMemory
 
+    -- ** ContainerSummary
+    , ContainerSummary
+    , containerSummary
+    , csReason
+    , csExitCode
+
     -- ** Host
     , Host
     , host
@@ -223,19 +250,20 @@ module Network.AWS.Batch
     -- ** JobDefinition
     , JobDefinition
     , jobDefinition
-    , jStatus
-    , jRetryStrategy
-    , jParameters
-    , jContainerProperties
-    , jJobDefinitionName
-    , jJobDefinitionARN
-    , jRevision
-    , jType
+    , jobStatus
+    , jobRetryStrategy
+    , jobParameters
+    , jobContainerProperties
+    , jobJobDefinitionName
+    , jobJobDefinitionARN
+    , jobRevision
+    , jobType
 
     -- ** JobDependency
     , JobDependency
     , jobDependency
     , jJobId
+    , jType
 
     -- ** JobDetail
     , JobDetail
@@ -248,6 +276,7 @@ module Network.AWS.Batch
     , jdContainer
     , jdParameters
     , jdStatusReason
+    , jdArrayProperties
     , jdJobName
     , jdJobId
     , jdJobQueue
@@ -269,6 +298,13 @@ module Network.AWS.Batch
     -- ** JobSummary
     , JobSummary
     , jobSummary
+    , jsStoppedAt
+    , jsStatus
+    , jsCreatedAt
+    , jsStartedAt
+    , jsContainer
+    , jsStatusReason
+    , jsArrayProperties
     , jsJobId
     , jsJobName
 

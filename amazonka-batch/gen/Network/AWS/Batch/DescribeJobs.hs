@@ -96,7 +96,7 @@ instance ToQuery DescribeJobs where
 
 -- | /See:/ 'describeJobsResponse' smart constructor.
 data DescribeJobsResponse = DescribeJobsResponse'
-  { _djrsJobs           :: !(Maybe [JobDetail])
+  { _djrsJobs :: !(Maybe [JobDetail])
   , _djrsResponseStatus :: !Int
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
@@ -105,7 +105,7 @@ data DescribeJobsResponse = DescribeJobsResponse'
 --
 -- Use one of the following lenses to modify other fields as desired:
 --
--- * 'djrsJobs' - The list of jobs.
+-- * 'djrsJobs' - The list of jobs. 
 --
 -- * 'djrsResponseStatus' - -- | The response status code.
 describeJobsResponse
@@ -116,7 +116,7 @@ describeJobsResponse pResponseStatus_ =
   {_djrsJobs = Nothing, _djrsResponseStatus = pResponseStatus_}
 
 
--- | The list of jobs.
+-- | The list of jobs. 
 djrsJobs :: Lens' DescribeJobsResponse [JobDetail]
 djrsJobs = lens _djrsJobs (\ s a -> s{_djrsJobs = a}) . _Default . _Coerce;
 

@@ -21,9 +21,9 @@
 -- Creates an AWS Batch compute environment. You can create @MANAGED@ or @UNMANAGED@ compute environments.
 --
 --
--- In a managed compute environment, AWS Batch manages the compute resources within the environment, based on the compute resources that you specify. Instances launched into a managed compute environment use a recent, approved version of the Amazon ECS-optimized AMI. You can choose to use Amazon EC2 On-Demand instances in your managed compute environment, or you can use Amazon EC2 Spot instances that only launch when the Spot bid price is below a specified percentage of the On-Demand price.
+-- In a managed compute environment, AWS Batch manages the compute resources within the environment, based on the compute resources that you specify. Instances launched into a managed compute environment use a recent, approved version of the Amazon ECS-optimized AMI. You can choose to use Amazon EC2 On-Demand Instances in your managed compute environment, or you can use Amazon EC2 Spot Instances that only launch when the Spot bid price is below a specified percentage of the On-Demand price.
 --
--- In an unmanaged compute environment, you can manage your own compute resources. This provides more compute resource configuration options, such as using a custom AMI, but you must ensure that your AMI meets the Amazon ECS container instance AMI specification. For more information, see <http://docs.aws.amazon.com/AmazonECS/latest/developerguide/container_instance_AMIs.html Container Instance AMIs> in the /Amazon EC2 Container Service Developer Guide/ . After you have created your unmanaged compute environment, you can use the 'DescribeComputeEnvironments' operation to find the Amazon ECS cluster that is associated with it and then manually launch your container instances into that Amazon ECS cluster. For more information, see <http://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_container_instance.html Launching an Amazon ECS Container Instance> in the /Amazon EC2 Container Service Developer Guide/ .
+-- In an unmanaged compute environment, you can manage your own compute resources. This provides more compute resource configuration options, such as using a custom AMI, but you must ensure that your AMI meets the Amazon ECS container instance AMI specification. For more information, see <http://docs.aws.amazon.com/AmazonECS/latest/developerguide/container_instance_AMIs.html Container Instance AMIs> in the /Amazon Elastic Container Service Developer Guide/ . After you have created your unmanaged compute environment, you can use the 'DescribeComputeEnvironments' operation to find the Amazon ECS cluster that is associated with it and then manually launch your container instances into that Amazon ECS cluster. For more information, see <http://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_container_instance.html Launching an Amazon ECS Container Instance> in the /Amazon Elastic Container Service Developer Guide/ .
 --
 module Network.AWS.Batch.CreateComputeEnvironment
     (
@@ -55,11 +55,11 @@ import Network.AWS.Response
 
 -- | /See:/ 'createComputeEnvironment' smart constructor.
 data CreateComputeEnvironment = CreateComputeEnvironment'
-  { _cceState                  :: !(Maybe CEState)
-  , _cceComputeResources       :: !(Maybe ComputeResource)
+  { _cceState :: !(Maybe CEState)
+  , _cceComputeResources :: !(Maybe ComputeResource)
   , _cceComputeEnvironmentName :: !Text
-  , _cceType                   :: !CEType
-  , _cceServiceRole            :: !Text
+  , _cceType :: !CEType
+  , _cceServiceRole :: !Text
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
 
@@ -73,7 +73,7 @@ data CreateComputeEnvironment = CreateComputeEnvironment'
 --
 -- * 'cceComputeEnvironmentName' - The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed.
 --
--- * 'cceType' - The type of the compute environment.
+-- * 'cceType' - The type of the compute environment. 
 --
 -- * 'cceServiceRole' - The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf. If your specified role has a path other than @/@ , then you must either specify the full role ARN (this is recommended) or prefix the role name with the path.
 createComputeEnvironment
@@ -103,7 +103,7 @@ cceComputeResources = lens _cceComputeResources (\ s a -> s{_cceComputeResources
 cceComputeEnvironmentName :: Lens' CreateComputeEnvironment Text
 cceComputeEnvironmentName = lens _cceComputeEnvironmentName (\ s a -> s{_cceComputeEnvironmentName = a});
 
--- | The type of the compute environment.
+-- | The type of the compute environment. 
 cceType :: Lens' CreateComputeEnvironment CEType
 cceType = lens _cceType (\ s a -> s{_cceType = a});
 
@@ -155,8 +155,8 @@ instance ToQuery CreateComputeEnvironment where
 -- | /See:/ 'createComputeEnvironmentResponse' smart constructor.
 data CreateComputeEnvironmentResponse = CreateComputeEnvironmentResponse'
   { _ccersComputeEnvironmentName :: !(Maybe Text)
-  , _ccersComputeEnvironmentARN  :: !(Maybe Text)
-  , _ccersResponseStatus         :: !Int
+  , _ccersComputeEnvironmentARN :: !(Maybe Text)
+  , _ccersResponseStatus :: !Int
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
 
@@ -166,7 +166,7 @@ data CreateComputeEnvironmentResponse = CreateComputeEnvironmentResponse'
 --
 -- * 'ccersComputeEnvironmentName' - The name of the compute environment.
 --
--- * 'ccersComputeEnvironmentARN' - The Amazon Resource Name (ARN) of the compute environment.
+-- * 'ccersComputeEnvironmentARN' - The Amazon Resource Name (ARN) of the compute environment. 
 --
 -- * 'ccersResponseStatus' - -- | The response status code.
 createComputeEnvironmentResponse
@@ -184,7 +184,7 @@ createComputeEnvironmentResponse pResponseStatus_ =
 ccersComputeEnvironmentName :: Lens' CreateComputeEnvironmentResponse (Maybe Text)
 ccersComputeEnvironmentName = lens _ccersComputeEnvironmentName (\ s a -> s{_ccersComputeEnvironmentName = a});
 
--- | The Amazon Resource Name (ARN) of the compute environment.
+-- | The Amazon Resource Name (ARN) of the compute environment. 
 ccersComputeEnvironmentARN :: Lens' CreateComputeEnvironmentResponse (Maybe Text)
 ccersComputeEnvironmentARN = lens _ccersComputeEnvironmentARN (\ s a -> s{_ccersComputeEnvironmentARN = a});
 

@@ -18,7 +18,7 @@
 -- Stability   : auto-generated
 -- Portability : non-portable (GHC extensions)
 --
--- Registers an AWS Batch job definition.
+-- Registers an AWS Batch job definition. 
 --
 --
 module Network.AWS.Batch.RegisterJobDefinition
@@ -52,11 +52,11 @@ import Network.AWS.Response
 
 -- | /See:/ 'registerJobDefinition' smart constructor.
 data RegisterJobDefinition = RegisterJobDefinition'
-  { _rjdRetryStrategy       :: !(Maybe RetryStrategy)
-  , _rjdParameters          :: !(Maybe (Map Text Text))
+  { _rjdRetryStrategy :: !(Maybe RetryStrategy)
+  , _rjdParameters :: !(Maybe (Map Text Text))
   , _rjdContainerProperties :: !(Maybe ContainerProperties)
-  , _rjdJobDefinitionName   :: !Text
-  , _rjdType                :: !JobDefinitionType
+  , _rjdJobDefinitionName :: !Text
+  , _rjdType :: !JobDefinitionType
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
 
@@ -149,10 +149,10 @@ instance ToQuery RegisterJobDefinition where
 
 -- | /See:/ 'registerJobDefinitionResponse' smart constructor.
 data RegisterJobDefinitionResponse = RegisterJobDefinitionResponse'
-  { _rjdrsResponseStatus    :: !Int
+  { _rjdrsResponseStatus :: !Int
   , _rjdrsJobDefinitionName :: !Text
-  , _rjdrsJobDefinitionARN  :: !Text
-  , _rjdrsRevision          :: !Int
+  , _rjdrsJobDefinitionARN :: !Text
+  , _rjdrsRevision :: !Int
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
 
@@ -164,7 +164,7 @@ data RegisterJobDefinitionResponse = RegisterJobDefinitionResponse'
 --
 -- * 'rjdrsJobDefinitionName' - The name of the job definition.
 --
--- * 'rjdrsJobDefinitionARN' - The Amazon Resource Name (ARN) of the job definition.
+-- * 'rjdrsJobDefinitionARN' - The Amazon Resource Name (ARN) of the job definition. 
 --
 -- * 'rjdrsRevision' - The revision of the job definition.
 registerJobDefinitionResponse
@@ -190,7 +190,7 @@ rjdrsResponseStatus = lens _rjdrsResponseStatus (\ s a -> s{_rjdrsResponseStatus
 rjdrsJobDefinitionName :: Lens' RegisterJobDefinitionResponse Text
 rjdrsJobDefinitionName = lens _rjdrsJobDefinitionName (\ s a -> s{_rjdrsJobDefinitionName = a});
 
--- | The Amazon Resource Name (ARN) of the job definition.
+-- | The Amazon Resource Name (ARN) of the job definition. 
 rjdrsJobDefinitionARN :: Lens' RegisterJobDefinitionResponse Text
 rjdrsJobDefinitionARN = lens _rjdrsJobDefinitionARN (\ s a -> s{_rjdrsJobDefinitionARN = a});
 

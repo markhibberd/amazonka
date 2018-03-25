@@ -51,11 +51,11 @@ import Network.AWS.Response
 
 -- | /See:/ 'describeJobDefinitions' smart constructor.
 data DescribeJobDefinitions = DescribeJobDefinitions'
-  { _djdStatus            :: !(Maybe Text)
+  { _djdStatus :: !(Maybe Text)
   , _djdJobDefinitionName :: !(Maybe Text)
-  , _djdJobDefinitions    :: !(Maybe [Text])
-  , _djdNextToken         :: !(Maybe Text)
-  , _djdMaxResults        :: !(Maybe Int)
+  , _djdJobDefinitions :: !(Maybe [Text])
+  , _djdNextToken :: !(Maybe Text)
+  , _djdMaxResults :: !(Maybe Int)
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
 
@@ -146,7 +146,7 @@ instance ToQuery DescribeJobDefinitions where
 -- | /See:/ 'describeJobDefinitionsResponse' smart constructor.
 data DescribeJobDefinitionsResponse = DescribeJobDefinitionsResponse'
   { _djdrsJobDefinitions :: !(Maybe [JobDefinition])
-  , _djdrsNextToken      :: !(Maybe Text)
+  , _djdrsNextToken :: !(Maybe Text)
   , _djdrsResponseStatus :: !Int
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
@@ -155,7 +155,7 @@ data DescribeJobDefinitionsResponse = DescribeJobDefinitionsResponse'
 --
 -- Use one of the following lenses to modify other fields as desired:
 --
--- * 'djdrsJobDefinitions' - The list of job definitions.
+-- * 'djdrsJobDefinitions' - The list of job definitions. 
 --
 -- * 'djdrsNextToken' - The @nextToken@ value to include in a future @DescribeJobDefinitions@ request. When the results of a @DescribeJobDefinitions@ request exceed @maxResults@ , this value can be used to retrieve the next page of results. This value is @null@ when there are no more results to return.
 --
@@ -171,7 +171,7 @@ describeJobDefinitionsResponse pResponseStatus_ =
   }
 
 
--- | The list of job definitions.
+-- | The list of job definitions. 
 djdrsJobDefinitions :: Lens' DescribeJobDefinitionsResponse [JobDefinition]
 djdrsJobDefinitions = lens _djdrsJobDefinitions (\ s a -> s{_djdrsJobDefinitions = a}) . _Default . _Coerce;
 

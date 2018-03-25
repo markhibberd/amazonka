@@ -46,7 +46,7 @@ import Network.AWS.Response
 
 -- | /See:/ 'cancelJob' smart constructor.
 data CancelJob = CancelJob'
-  { _cjJobId  :: !Text
+  { _cjJobId :: !Text
   , _cjReason :: !Text
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
@@ -57,7 +57,7 @@ data CancelJob = CancelJob'
 --
 -- * 'cjJobId' - The AWS Batch job ID of the job to cancel.
 --
--- * 'cjReason' - A message to attach to the job that explains the reason for cancelling it. This message is returned by future 'DescribeJobs' operations on the job. This message is also recorded in the AWS Batch activity logs.
+-- * 'cjReason' - A message to attach to the job that explains the reason for canceling it. This message is returned by future 'DescribeJobs' operations on the job. This message is also recorded in the AWS Batch activity logs. 
 cancelJob
     :: Text -- ^ 'cjJobId'
     -> Text -- ^ 'cjReason'
@@ -70,7 +70,7 @@ cancelJob pJobId_ pReason_ =
 cjJobId :: Lens' CancelJob Text
 cjJobId = lens _cjJobId (\ s a -> s{_cjJobId = a});
 
--- | A message to attach to the job that explains the reason for cancelling it. This message is returned by future 'DescribeJobs' operations on the job. This message is also recorded in the AWS Batch activity logs.
+-- | A message to attach to the job that explains the reason for canceling it. This message is returned by future 'DescribeJobs' operations on the job. This message is also recorded in the AWS Batch activity logs. 
 cjReason :: Lens' CancelJob Text
 cjReason = lens _cjReason (\ s a -> s{_cjReason = a});
 

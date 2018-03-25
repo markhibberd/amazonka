@@ -50,10 +50,10 @@ import Network.AWS.Response
 
 -- | /See:/ 'updateJobQueue' smart constructor.
 data UpdateJobQueue = UpdateJobQueue'
-  { _ujqState                   :: !(Maybe JQState)
-  , _ujqPriority                :: !(Maybe Int)
+  { _ujqState :: !(Maybe JQState)
+  , _ujqPriority :: !(Maybe Int)
   , _ujqComputeEnvironmentOrder :: !(Maybe [ComputeEnvironmentOrder])
-  , _ujqJobQueue                :: !Text
+  , _ujqJobQueue :: !Text
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
 
@@ -65,7 +65,7 @@ data UpdateJobQueue = UpdateJobQueue'
 --
 -- * 'ujqPriority' - The priority of the job queue. Job queues with a higher priority (or a higher integer value for the @priority@ parameter) are evaluated first when associated with same compute environment. Priority is determined in descending order, for example, a job queue with a priority value of @10@ is given scheduling preference over a job queue with a priority value of @1@ .
 --
--- * 'ujqComputeEnvironmentOrder' - Details the set of compute environments mapped to a job queue and their order relative to each other. This is one of the parameters used by the job scheduler to determine which compute environment should execute a given job.
+-- * 'ujqComputeEnvironmentOrder' - Details the set of compute environments mapped to a job queue and their order relative to each other. This is one of the parameters used by the job scheduler to determine which compute environment should execute a given job. 
 --
 -- * 'ujqJobQueue' - The name or the Amazon Resource Name (ARN) of the job queue.
 updateJobQueue
@@ -88,7 +88,7 @@ ujqState = lens _ujqState (\ s a -> s{_ujqState = a});
 ujqPriority :: Lens' UpdateJobQueue (Maybe Int)
 ujqPriority = lens _ujqPriority (\ s a -> s{_ujqPriority = a});
 
--- | Details the set of compute environments mapped to a job queue and their order relative to each other. This is one of the parameters used by the job scheduler to determine which compute environment should execute a given job.
+-- | Details the set of compute environments mapped to a job queue and their order relative to each other. This is one of the parameters used by the job scheduler to determine which compute environment should execute a given job. 
 ujqComputeEnvironmentOrder :: Lens' UpdateJobQueue [ComputeEnvironmentOrder]
 ujqComputeEnvironmentOrder = lens _ujqComputeEnvironmentOrder (\ s a -> s{_ujqComputeEnvironmentOrder = a}) . _Default . _Coerce;
 
@@ -135,8 +135,8 @@ instance ToQuery UpdateJobQueue where
 
 -- | /See:/ 'updateJobQueueResponse' smart constructor.
 data UpdateJobQueueResponse = UpdateJobQueueResponse'
-  { _ujqrsJobQueueARN    :: !(Maybe Text)
-  , _ujqrsJobQueueName   :: !(Maybe Text)
+  { _ujqrsJobQueueARN :: !(Maybe Text)
+  , _ujqrsJobQueueName :: !(Maybe Text)
   , _ujqrsResponseStatus :: !Int
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 

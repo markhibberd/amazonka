@@ -46,7 +46,7 @@ import Network.AWS.Response
 
 -- | /See:/ 'terminateJob' smart constructor.
 data TerminateJob = TerminateJob'
-  { _tjJobId  :: !Text
+  { _tjJobId :: !Text
   , _tjReason :: !Text
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
@@ -57,7 +57,7 @@ data TerminateJob = TerminateJob'
 --
 -- * 'tjJobId' - The AWS Batch job ID of the job to terminate.
 --
--- * 'tjReason' - A message to attach to the job that explains the reason for cancelling it. This message is returned by future 'DescribeJobs' operations on the job. This message is also recorded in the AWS Batch activity logs.
+-- * 'tjReason' - A message to attach to the job that explains the reason for canceling it. This message is returned by future 'DescribeJobs' operations on the job. This message is also recorded in the AWS Batch activity logs. 
 terminateJob
     :: Text -- ^ 'tjJobId'
     -> Text -- ^ 'tjReason'
@@ -70,7 +70,7 @@ terminateJob pJobId_ pReason_ =
 tjJobId :: Lens' TerminateJob Text
 tjJobId = lens _tjJobId (\ s a -> s{_tjJobId = a});
 
--- | A message to attach to the job that explains the reason for cancelling it. This message is returned by future 'DescribeJobs' operations on the job. This message is also recorded in the AWS Batch activity logs.
+-- | A message to attach to the job that explains the reason for canceling it. This message is returned by future 'DescribeJobs' operations on the job. This message is also recorded in the AWS Batch activity logs. 
 tjReason :: Lens' TerminateJob Text
 tjReason = lens _tjReason (\ s a -> s{_tjReason = a});
 
