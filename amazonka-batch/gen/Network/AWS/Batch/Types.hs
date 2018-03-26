@@ -1,4 +1,4 @@
-{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE OverloadedStrings  #-}
 
 -- Derived from AWS service descriptions, licensed under Apache 2.0.
 
@@ -18,6 +18,9 @@ module Network.AWS.Batch.Types
     -- * Errors
     , _ServerException
     , _ClientException
+
+    -- * ArrayJobDependency
+    , ArrayJobDependency (..)
 
     -- * CEState
     , CEState (..)
@@ -42,6 +45,24 @@ module Network.AWS.Batch.Types
 
     -- * JobStatus
     , JobStatus (..)
+
+    -- * ArrayProperties
+    , ArrayProperties
+    , arrayProperties
+    , apSize
+
+    -- * ArrayPropertiesDetail
+    , ArrayPropertiesDetail
+    , arrayPropertiesDetail
+    , apdSize
+    , apdStatusSummary
+    , apdIndex
+
+    -- * ArrayPropertiesSummary
+    , ArrayPropertiesSummary
+    , arrayPropertiesSummary
+    , apsSize
+    , apsIndex
 
     -- * AttemptContainerDetail
     , AttemptContainerDetail
@@ -148,6 +169,12 @@ module Network.AWS.Batch.Types
     , cpVcpus
     , cpMemory
 
+    -- * ContainerSummary
+    , ContainerSummary
+    , containerSummary
+    , csReason
+    , csExitCode
+
     -- * Host
     , Host
     , host
@@ -156,19 +183,20 @@ module Network.AWS.Batch.Types
     -- * JobDefinition
     , JobDefinition
     , jobDefinition
-    , jStatus
-    , jRetryStrategy
-    , jParameters
-    , jContainerProperties
-    , jJobDefinitionName
-    , jJobDefinitionARN
-    , jRevision
-    , jType
+    , jobStatus
+    , jobRetryStrategy
+    , jobParameters
+    , jobContainerProperties
+    , jobJobDefinitionName
+    , jobJobDefinitionARN
+    , jobRevision
+    , jobType
 
     -- * JobDependency
     , JobDependency
     , jobDependency
     , jJobId
+    , jType
 
     -- * JobDetail
     , JobDetail
@@ -181,6 +209,7 @@ module Network.AWS.Batch.Types
     , jdContainer
     , jdParameters
     , jdStatusReason
+    , jdArrayProperties
     , jdJobName
     , jdJobId
     , jdJobQueue
@@ -202,6 +231,13 @@ module Network.AWS.Batch.Types
     -- * JobSummary
     , JobSummary
     , jobSummary
+    , jsStoppedAt
+    , jsStatus
+    , jsCreatedAt
+    , jsStartedAt
+    , jsContainer
+    , jsStatusReason
+    , jsArrayProperties
     , jsJobId
     , jsJobName
 
@@ -287,7 +323,7 @@ _ServerException :: AsError a => Getting (First ServiceError) a ServiceError
 _ServerException = _MatchServiceError batch "ServerException" . hasStatus 500
 
 
--- | These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permission to use the action or resource, or specifying an identifier that is not valid.
+-- | These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an identifier that is not valid. 
 --
 --
 _ClientException :: AsError a => Getting (First ServiceError) a ServiceError

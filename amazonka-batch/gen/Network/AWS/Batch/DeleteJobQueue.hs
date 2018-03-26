@@ -21,7 +21,7 @@
 -- Deletes the specified job queue. You must first disable submissions for a queue with the 'UpdateJobQueue' operation. All jobs in the queue are terminated when you delete a job queue.
 --
 --
--- It is not necessary to disassociate compute environments from a queue before submitting a @DeleteJobQueue@ request.
+-- It is not necessary to disassociate compute environments from a queue before submitting a @DeleteJobQueue@ request. 
 --
 module Network.AWS.Batch.DeleteJobQueue
     (
@@ -55,14 +55,14 @@ newtype DeleteJobQueue = DeleteJobQueue'
 --
 -- Use one of the following lenses to modify other fields as desired:
 --
--- * 'djqJobQueue' - The short name or full Amazon Resource Name (ARN) of the queue to delete.
+-- * 'djqJobQueue' - The short name or full Amazon Resource Name (ARN) of the queue to delete. 
 deleteJobQueue
     :: Text -- ^ 'djqJobQueue'
     -> DeleteJobQueue
 deleteJobQueue pJobQueue_ = DeleteJobQueue' {_djqJobQueue = pJobQueue_}
 
 
--- | The short name or full Amazon Resource Name (ARN) of the queue to delete.
+-- | The short name or full Amazon Resource Name (ARN) of the queue to delete. 
 djqJobQueue :: Lens' DeleteJobQueue Text
 djqJobQueue = lens _djqJobQueue (\ s a -> s{_djqJobQueue = a});
 

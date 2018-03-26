@@ -53,7 +53,7 @@ newtype DeregisterJobDefinition = DeregisterJobDefinition'
 --
 -- Use one of the following lenses to modify other fields as desired:
 --
--- * 'djdJobDefinition' - The name and revision (@name:revision@ ) or full Amazon Resource Name (ARN) of the job definition to deregister.
+-- * 'djdJobDefinition' - The name and revision (@name:revision@ ) or full Amazon Resource Name (ARN) of the job definition to deregister. 
 deregisterJobDefinition
     :: Text -- ^ 'djdJobDefinition'
     -> DeregisterJobDefinition
@@ -61,7 +61,7 @@ deregisterJobDefinition pJobDefinition_ =
   DeregisterJobDefinition' {_djdJobDefinition = pJobDefinition_}
 
 
--- | The name and revision (@name:revision@ ) or full Amazon Resource Name (ARN) of the job definition to deregister.
+-- | The name and revision (@name:revision@ ) or full Amazon Resource Name (ARN) of the job definition to deregister. 
 djdJobDefinition :: Lens' DeregisterJobDefinition Text
 djdJobDefinition = lens _djdJobDefinition (\ s a -> s{_djdJobDefinition = a});
 

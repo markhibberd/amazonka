@@ -52,8 +52,8 @@ import Network.AWS.Response
 -- | /See:/ 'describeComputeEnvironments' smart constructor.
 data DescribeComputeEnvironments = DescribeComputeEnvironments'
   { _dceComputeEnvironments :: !(Maybe [Text])
-  , _dceNextToken           :: !(Maybe Text)
-  , _dceMaxResults          :: !(Maybe Int)
+  , _dceNextToken :: !(Maybe Text)
+  , _dceMaxResults :: !(Maybe Int)
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
 
@@ -61,7 +61,7 @@ data DescribeComputeEnvironments = DescribeComputeEnvironments'
 --
 -- Use one of the following lenses to modify other fields as desired:
 --
--- * 'dceComputeEnvironments' - A list of up to 100 compute environment names or full Amazon Resource Name (ARN) entries.
+-- * 'dceComputeEnvironments' - A list of up to 100 compute environment names or full Amazon Resource Name (ARN) entries. 
 --
 -- * 'dceNextToken' - The @nextToken@ value returned from a previous paginated @DescribeComputeEnvironments@ request where @maxResults@ was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the @nextToken@ value. This value is @null@ when there are no more results to return.
 --
@@ -76,7 +76,7 @@ describeComputeEnvironments =
   }
 
 
--- | A list of up to 100 compute environment names or full Amazon Resource Name (ARN) entries.
+-- | A list of up to 100 compute environment names or full Amazon Resource Name (ARN) entries. 
 dceComputeEnvironments :: Lens' DescribeComputeEnvironments [Text]
 dceComputeEnvironments = lens _dceComputeEnvironments (\ s a -> s{_dceComputeEnvironments = a}) . _Default . _Coerce;
 
@@ -129,8 +129,8 @@ instance ToQuery DescribeComputeEnvironments where
 -- | /See:/ 'describeComputeEnvironmentsResponse' smart constructor.
 data DescribeComputeEnvironmentsResponse = DescribeComputeEnvironmentsResponse'
   { _drsComputeEnvironments :: !(Maybe [ComputeEnvironmentDetail])
-  , _drsNextToken           :: !(Maybe Text)
-  , _drsResponseStatus      :: !Int
+  , _drsNextToken :: !(Maybe Text)
+  , _drsResponseStatus :: !Int
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
 

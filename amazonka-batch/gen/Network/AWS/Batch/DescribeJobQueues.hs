@@ -49,8 +49,8 @@ import Network.AWS.Response
 
 -- | /See:/ 'describeJobQueues' smart constructor.
 data DescribeJobQueues = DescribeJobQueues'
-  { _djqNextToken  :: !(Maybe Text)
-  , _djqJobQueues  :: !(Maybe [Text])
+  { _djqNextToken :: !(Maybe Text)
+  , _djqJobQueues :: !(Maybe [Text])
   , _djqMaxResults :: !(Maybe Int)
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
@@ -121,8 +121,8 @@ instance ToQuery DescribeJobQueues where
 
 -- | /See:/ 'describeJobQueuesResponse' smart constructor.
 data DescribeJobQueuesResponse = DescribeJobQueuesResponse'
-  { _djqsrsNextToken      :: !(Maybe Text)
-  , _djqsrsJobQueues      :: !(Maybe [JobQueueDetail])
+  { _djqsrsNextToken :: !(Maybe Text)
+  , _djqsrsJobQueues :: !(Maybe [JobQueueDetail])
   , _djqsrsResponseStatus :: !Int
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
@@ -133,7 +133,7 @@ data DescribeJobQueuesResponse = DescribeJobQueuesResponse'
 --
 -- * 'djqsrsNextToken' - The @nextToken@ value to include in a future @DescribeJobQueues@ request. When the results of a @DescribeJobQueues@ request exceed @maxResults@ , this value can be used to retrieve the next page of results. This value is @null@ when there are no more results to return.
 --
--- * 'djqsrsJobQueues' - The list of job queues.
+-- * 'djqsrsJobQueues' - The list of job queues. 
 --
 -- * 'djqsrsResponseStatus' - -- | The response status code.
 describeJobQueuesResponse
@@ -151,7 +151,7 @@ describeJobQueuesResponse pResponseStatus_ =
 djqsrsNextToken :: Lens' DescribeJobQueuesResponse (Maybe Text)
 djqsrsNextToken = lens _djqsrsNextToken (\ s a -> s{_djqsrsNextToken = a});
 
--- | The list of job queues.
+-- | The list of job queues. 
 djqsrsJobQueues :: Lens' DescribeJobQueuesResponse [JobQueueDetail]
 djqsrsJobQueues = lens _djqsrsJobQueues (\ s a -> s{_djqsrsJobQueues = a}) . _Default . _Coerce;
 

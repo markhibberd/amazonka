@@ -55,7 +55,7 @@ newtype DeleteComputeEnvironment = DeleteComputeEnvironment'
 --
 -- Use one of the following lenses to modify other fields as desired:
 --
--- * 'dceComputeEnvironment' - The name or Amazon Resource Name (ARN) of the compute environment to delete.
+-- * 'dceComputeEnvironment' - The name or Amazon Resource Name (ARN) of the compute environment to delete. 
 deleteComputeEnvironment
     :: Text -- ^ 'dceComputeEnvironment'
     -> DeleteComputeEnvironment
@@ -63,7 +63,7 @@ deleteComputeEnvironment pComputeEnvironment_ =
   DeleteComputeEnvironment' {_dceComputeEnvironment = pComputeEnvironment_}
 
 
--- | The name or Amazon Resource Name (ARN) of the compute environment to delete.
+-- | The name or Amazon Resource Name (ARN) of the compute environment to delete. 
 dceComputeEnvironment :: Lens' DeleteComputeEnvironment Text
 dceComputeEnvironment = lens _dceComputeEnvironment (\ s a -> s{_dceComputeEnvironment = a});
 
