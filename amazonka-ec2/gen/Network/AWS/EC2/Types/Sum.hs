@@ -1422,6 +1422,10 @@ data InstanceType
   | G3_16XLarge
   | G3_4XLarge
   | G3_8XLarge
+  | H1_16XLarge
+  | H1_2XLarge
+  | H1_4XLarge
+  | H1_8XLarge
   | HI1_4XLarge
   | HS1_8XLarge
   | I2_2XLarge
@@ -1451,6 +1455,12 @@ data InstanceType
   | M4_4XLarge
   | M4_Large
   | M4_XLarge
+  | M5_12XLarge
+  | M5_24XLarge
+  | M5_2XLarge
+  | M5_4XLarge
+  | M5_Large
+  | M5_XLarge
   | P2_16XLarge
   | P2_8XLarge
   | P2_XLarge
@@ -1478,7 +1488,12 @@ data InstanceType
   | T2_XLarge
   | X1_16XLarge
   | X1_32XLarge
+  | X1e_16XLarge
+  | X1e_2XLarge
   | X1e_32XLarge
+  | X1e_4XLarge
+  | X1e_8XLarge
+  | X1e_XLarge
   deriving (Eq, Ord, Read, Show, Enum, Bounded, Data, Typeable, Generic)
 
 
@@ -1517,6 +1532,10 @@ instance FromText InstanceType where
         "g3.16xlarge" -> pure G3_16XLarge
         "g3.4xlarge" -> pure G3_4XLarge
         "g3.8xlarge" -> pure G3_8XLarge
+        "h1.16xlarge" -> pure H1_16XLarge
+        "h1.2xlarge" -> pure H1_2XLarge
+        "h1.4xlarge" -> pure H1_4XLarge
+        "h1.8xlarge" -> pure H1_8XLarge
         "hi1.4xlarge" -> pure HI1_4XLarge
         "hs1.8xlarge" -> pure HS1_8XLarge
         "i2.2xlarge" -> pure I2_2XLarge
@@ -1546,6 +1565,12 @@ instance FromText InstanceType where
         "m4.4xlarge" -> pure M4_4XLarge
         "m4.large" -> pure M4_Large
         "m4.xlarge" -> pure M4_XLarge
+        "m5.12xlarge" -> pure M5_12XLarge
+        "m5.24xlarge" -> pure M5_24XLarge
+        "m5.2xlarge" -> pure M5_2XLarge
+        "m5.4xlarge" -> pure M5_4XLarge
+        "m5.large" -> pure M5_Large
+        "m5.xlarge" -> pure M5_XLarge
         "p2.16xlarge" -> pure P2_16XLarge
         "p2.8xlarge" -> pure P2_8XLarge
         "p2.xlarge" -> pure P2_XLarge
@@ -1573,9 +1598,14 @@ instance FromText InstanceType where
         "t2.xlarge" -> pure T2_XLarge
         "x1.16xlarge" -> pure X1_16XLarge
         "x1.32xlarge" -> pure X1_32XLarge
+        "x1e.16xlarge" -> pure X1e_16XLarge
+        "x1e.2xlarge" -> pure X1e_2XLarge
         "x1e.32xlarge" -> pure X1e_32XLarge
+        "x1e.4xlarge" -> pure X1e_4XLarge
+        "x1e.8xlarge" -> pure X1e_8XLarge
+        "x1e.xlarge" -> pure X1e_XLarge
         e -> fromTextError $ "Failure parsing InstanceType from value: '" <> e
-           <> "'. Accepted values: c1.medium, c1.xlarge, c3.2xlarge, c3.4xlarge, c3.8xlarge, c3.large, c3.xlarge, c4.2xlarge, c4.4xlarge, c4.8xlarge, c4.large, c4.xlarge, c5.18xlarge, c5.2xlarge, c5.4xlarge, c5.9xlarge, c5.large, c5.xlarge, cc1.4xlarge, cc2.8xlarge, cg1.4xlarge, cr1.8xlarge, d2.2xlarge, d2.4xlarge, d2.8xlarge, d2.xlarge, f1.16xlarge, f1.2xlarge, g2.2xlarge, g2.8xlarge, g3.16xlarge, g3.4xlarge, g3.8xlarge, hi1.4xlarge, hs1.8xlarge, i2.2xlarge, i2.4xlarge, i2.8xlarge, i2.xlarge, i3.16xlarge, i3.2xlarge, i3.4xlarge, i3.8xlarge, i3.large, i3.xlarge, m1.large, m1.medium, m1.small, m1.xlarge, m2.2xlarge, m2.4xlarge, m2.xlarge, m3.2xlarge, m3.large, m3.medium, m3.xlarge, m4.10xlarge, m4.16xlarge, m4.2xlarge, m4.4xlarge, m4.large, m4.xlarge, p2.16xlarge, p2.8xlarge, p2.xlarge, p3.16xlarge, p3.2xlarge, p3.8xlarge, r3.2xlarge, r3.4xlarge, r3.8xlarge, r3.large, r3.xlarge, r4.16xlarge, r4.2xlarge, r4.4xlarge, r4.8xlarge, r4.large, r4.xlarge, t1.micro, t2.2xlarge, t2.large, t2.medium, t2.micro, t2.nano, t2.small, t2.xlarge, x1.16xlarge, x1.32xlarge, x1e.32xlarge"
+           <> "'. Accepted values: c1.medium, c1.xlarge, c3.2xlarge, c3.4xlarge, c3.8xlarge, c3.large, c3.xlarge, c4.2xlarge, c4.4xlarge, c4.8xlarge, c4.large, c4.xlarge, c5.18xlarge, c5.2xlarge, c5.4xlarge, c5.9xlarge, c5.large, c5.xlarge, cc1.4xlarge, cc2.8xlarge, cg1.4xlarge, cr1.8xlarge, d2.2xlarge, d2.4xlarge, d2.8xlarge, d2.xlarge, f1.16xlarge, f1.2xlarge, g2.2xlarge, g2.8xlarge, g3.16xlarge, g3.4xlarge, g3.8xlarge, h1.16xlarge, h1.2xlarge, h1.4xlarge, h1.8xlarge, hi1.4xlarge, hs1.8xlarge, i2.2xlarge, i2.4xlarge, i2.8xlarge, i2.xlarge, i3.16xlarge, i3.2xlarge, i3.4xlarge, i3.8xlarge, i3.large, i3.xlarge, m1.large, m1.medium, m1.small, m1.xlarge, m2.2xlarge, m2.4xlarge, m2.xlarge, m3.2xlarge, m3.large, m3.medium, m3.xlarge, m4.10xlarge, m4.16xlarge, m4.2xlarge, m4.4xlarge, m4.large, m4.xlarge, m5.12xlarge, m5.24xlarge, m5.2xlarge, m5.4xlarge, m5.large, m5.xlarge, p2.16xlarge, p2.8xlarge, p2.xlarge, p3.16xlarge, p3.2xlarge, p3.8xlarge, r3.2xlarge, r3.4xlarge, r3.8xlarge, r3.large, r3.xlarge, r4.16xlarge, r4.2xlarge, r4.4xlarge, r4.8xlarge, r4.large, r4.xlarge, t1.micro, t2.2xlarge, t2.large, t2.medium, t2.micro, t2.nano, t2.small, t2.xlarge, x1.16xlarge, x1.32xlarge, x1e.16xlarge, x1e.2xlarge, x1e.32xlarge, x1e.4xlarge, x1e.8xlarge, x1e.xlarge"
 
 instance ToText InstanceType where
     toText = \case
@@ -1612,6 +1642,10 @@ instance ToText InstanceType where
         G3_16XLarge -> "g3.16xlarge"
         G3_4XLarge -> "g3.4xlarge"
         G3_8XLarge -> "g3.8xlarge"
+        H1_16XLarge -> "h1.16xlarge"
+        H1_2XLarge -> "h1.2xlarge"
+        H1_4XLarge -> "h1.4xlarge"
+        H1_8XLarge -> "h1.8xlarge"
         HI1_4XLarge -> "hi1.4xlarge"
         HS1_8XLarge -> "hs1.8xlarge"
         I2_2XLarge -> "i2.2xlarge"
@@ -1641,6 +1675,12 @@ instance ToText InstanceType where
         M4_4XLarge -> "m4.4xlarge"
         M4_Large -> "m4.large"
         M4_XLarge -> "m4.xlarge"
+        M5_12XLarge -> "m5.12xlarge"
+        M5_24XLarge -> "m5.24xlarge"
+        M5_2XLarge -> "m5.2xlarge"
+        M5_4XLarge -> "m5.4xlarge"
+        M5_Large -> "m5.large"
+        M5_XLarge -> "m5.xlarge"
         P2_16XLarge -> "p2.16xlarge"
         P2_8XLarge -> "p2.8xlarge"
         P2_XLarge -> "p2.xlarge"
@@ -1668,7 +1708,12 @@ instance ToText InstanceType where
         T2_XLarge -> "t2.xlarge"
         X1_16XLarge -> "x1.16xlarge"
         X1_32XLarge -> "x1.32xlarge"
+        X1e_16XLarge -> "x1e.16xlarge"
+        X1e_2XLarge -> "x1e.2xlarge"
         X1e_32XLarge -> "x1e.32xlarge"
+        X1e_4XLarge -> "x1e.4xlarge"
+        X1e_8XLarge -> "x1e.8xlarge"
+        X1e_XLarge -> "x1e.xlarge"
 
 instance Hashable     InstanceType
 instance NFData       InstanceType
