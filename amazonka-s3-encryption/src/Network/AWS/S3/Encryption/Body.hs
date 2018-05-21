@@ -10,7 +10,10 @@
 --
 module Network.AWS.S3.Encryption.Body where
 
-import           Conduit
+import           Control.Monad.Trans.Resource (ResourceT)
+import           Data.Conduit
+import           Data.Conduit.Combinators (sinkLazy)
+import qualified Data.Conduit.Combinators as CC
 import           Data.ByteString       (ByteString)
 import qualified Data.ByteString       as BS
 import qualified Data.ByteString.Lazy  as LBS
@@ -42,7 +45,7 @@ enforceChunks sz =
     ChunkedBody defaultChunkSize (fromIntegral sz) . flip fuse go
   where
     go = awaitForever (\i -> leftover i >> sinkLazy >>= yield)
-      =$= takeCE n
-      =$= mapC LBS.toStrict
+      =$= CC.takeE n
+      =$= CC.map LBS.toStrict
 
     n = fromIntegral defaultChunkSize

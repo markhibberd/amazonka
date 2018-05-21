@@ -1,3 +1,4 @@
+{-# LANGUAGE CPP               #-}
 {-# LANGUAGE FlexibleInstances #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE RankNTypes        #-}
@@ -14,7 +15,11 @@
 --
 module Network.AWS.S3.Encryption.Encrypt where
 
-import           Control.Lens                           hiding (coerce)
+#if ! MIN_VERSION_lens(4,13,0)
+import           Control.Lens hiding (coerce)
+#else
+import           Control.Lens
+#endif
 import           Control.Monad
 import           Control.Monad.Trans.AWS
 import           Data.Coerce
