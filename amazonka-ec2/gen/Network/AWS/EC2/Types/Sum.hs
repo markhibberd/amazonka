@@ -1407,6 +1407,12 @@ data InstanceType
   | C5_9XLarge
   | C5_Large
   | C5_XLarge
+  | C5d_Large
+  | C5d_XLarge
+  | C5d_2XLarge
+  | C5d_4XLarge
+  | C5d_9XLarge
+  | C5d_18XLarge
   | CC1_4XLarge
   | CC2_8XLarge
   | CG1_4XLarge
@@ -1517,6 +1523,12 @@ instance FromText InstanceType where
         "c5.9xlarge" -> pure C5_9XLarge
         "c5.large" -> pure C5_Large
         "c5.xlarge" -> pure C5_XLarge
+        "c5d.large" -> pure C5d_Large
+        "c5d.xlarge" -> pure C5d_XLarge
+        "c5d.2xlarge" -> pure C5d_2XLarge
+        "c5d.4xlarge" -> pure C5d_4XLarge
+        "c5d.9xlarge" -> pure C5d_9XLarge
+        "c5d.18xlarge" -> pure C5d_18XLarge
         "cc1.4xlarge" -> pure CC1_4XLarge
         "cc2.8xlarge" -> pure CC2_8XLarge
         "cg1.4xlarge" -> pure CG1_4XLarge
@@ -1627,6 +1639,12 @@ instance ToText InstanceType where
         C5_9XLarge -> "c5.9xlarge"
         C5_Large -> "c5.large"
         C5_XLarge -> "c5.xlarge"
+        C5d_Large -> "c5d.large"
+        C5d_XLarge -> "c5d.xlarge"
+        C5d_2XLarge -> "c5d.2xlarge"
+        C5d_4XLarge -> "c5d.4xlarge"
+        C5d_9XLarge -> "c5d.9xlarge"
+        C5d_18XLarge -> "c5d.18xlarge"
         CC1_4XLarge -> "cc1.4xlarge"
         CC2_8XLarge -> "cc2.8xlarge"
         CG1_4XLarge -> "cg1.4xlarge"
