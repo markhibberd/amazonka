@@ -13,9 +13,10 @@
 --
 module Network.AWS.S3.Encryption.Envelope where
 
-import           Conduit
 import           Control.Lens
 import           Control.Monad
+import           Control.Monad.Trans.Resource (MonadResource (..), MonadThrow (..))
+import           Control.Monad.IO.Class (MonadIO (..))
 import           Crypto.Cipher.AES
 import           Crypto.Cipher.Types
 import           Crypto.Data.Padding
@@ -26,6 +27,7 @@ import           Crypto.Random
 import           Data.Aeson
 import           Data.Bifunctor
 import           Data.ByteArray
+import           Data.Conduit
 import           Data.CaseInsensitive            (CI)
 import qualified Data.CaseInsensitive            as CI
 import qualified Data.HashMap.Strict             as Map
