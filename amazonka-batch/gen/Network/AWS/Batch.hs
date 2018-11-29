@@ -5,7 +5,7 @@
 
 -- |
 -- Module      : Network.AWS.Batch
--- Copyright   : (c) 2013-2017 Brendan Hay
+-- Copyright   : (c) 2013-2018 Brendan Hay
 -- License     : Mozilla Public License, v. 2.0.
 -- Maintainer  : Brendan Hay <brendan.g.hay+amazonka@gmail.com>
 -- Stability   : auto-generated
@@ -36,52 +36,52 @@ module Network.AWS.Batch
     -- * Operations
     -- $operations
 
-    -- ** CreateComputeEnvironment 
+    -- ** CreateComputeEnvironment
     , module Network.AWS.Batch.CreateComputeEnvironment
 
-    -- ** RegisterJobDefinition 
+    -- ** RegisterJobDefinition
     , module Network.AWS.Batch.RegisterJobDefinition
 
-    -- ** SubmitJob 
+    -- ** SubmitJob
     , module Network.AWS.Batch.SubmitJob
 
-    -- ** ListJobs 
+    -- ** ListJobs
     , module Network.AWS.Batch.ListJobs
 
-    -- ** TerminateJob 
+    -- ** TerminateJob
     , module Network.AWS.Batch.TerminateJob
 
-    -- ** DescribeJobs 
+    -- ** DescribeJobs
     , module Network.AWS.Batch.DescribeJobs
 
-    -- ** DeleteComputeEnvironment 
+    -- ** DeleteComputeEnvironment
     , module Network.AWS.Batch.DeleteComputeEnvironment
 
-    -- ** UpdateComputeEnvironment 
+    -- ** UpdateComputeEnvironment
     , module Network.AWS.Batch.UpdateComputeEnvironment
 
-    -- ** DescribeJobDefinitions 
+    -- ** DescribeJobDefinitions
     , module Network.AWS.Batch.DescribeJobDefinitions
 
-    -- ** UpdateJobQueue 
+    -- ** UpdateJobQueue
     , module Network.AWS.Batch.UpdateJobQueue
 
-    -- ** DeleteJobQueue 
+    -- ** DeleteJobQueue
     , module Network.AWS.Batch.DeleteJobQueue
 
-    -- ** CreateJobQueue 
+    -- ** CreateJobQueue
     , module Network.AWS.Batch.CreateJobQueue
 
-    -- ** DeregisterJobDefinition 
+    -- ** DeregisterJobDefinition
     , module Network.AWS.Batch.DeregisterJobDefinition
 
-    -- ** DescribeJobQueues 
+    -- ** DescribeJobQueues
     , module Network.AWS.Batch.DescribeJobQueues
 
-    -- ** DescribeComputeEnvironments 
+    -- ** DescribeComputeEnvironments
     , module Network.AWS.Batch.DescribeComputeEnvironments
 
-    -- ** CancelJob 
+    -- ** CancelJob
     , module Network.AWS.Batch.CancelJob
 
     -- * Types
@@ -250,14 +250,15 @@ module Network.AWS.Batch
     -- ** JobDefinition
     , JobDefinition
     , jobDefinition
-    , jobStatus
-    , jobRetryStrategy
-    , jobParameters
-    , jobContainerProperties
-    , jobJobDefinitionName
-    , jobJobDefinitionARN
-    , jobRevision
-    , jobType
+    , jddStatus
+    , jddRetryStrategy
+    , jddParameters
+    , jddTimeout
+    , jddContainerProperties
+    , jddJobDefinitionName
+    , jddJobDefinitionARN
+    , jddRevision
+    , jddType
 
     -- ** JobDependency
     , JobDependency
@@ -277,6 +278,7 @@ module Network.AWS.Batch
     , jdParameters
     , jdStatusReason
     , jdArrayProperties
+    , jdTimeout
     , jdJobName
     , jdJobId
     , jdJobQueue
@@ -307,6 +309,11 @@ module Network.AWS.Batch
     , jsArrayProperties
     , jsJobId
     , jsJobName
+
+    -- ** JobTimeout
+    , JobTimeout
+    , jobTimeout
+    , jtAttemptDurationSeconds
 
     -- ** KeyValuePair
     , KeyValuePair

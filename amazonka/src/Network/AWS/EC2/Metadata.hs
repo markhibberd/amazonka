@@ -8,7 +8,7 @@
 
 -- |
 -- Module      : Network.AWS.EC2.Metadata
--- Copyright   : (c) 2013-2017 Brendan Hay
+-- Copyright   : (c) 2013-2018 Brendan Hay
 -- License     : Mozilla Public License, v. 2.0.
 -- Maintainer  : Brendan Hay <brendan.g.hay+amazonka@gmail.com>
 -- Stability   : provisional
@@ -349,8 +349,8 @@ userdata m = do
 -- will need to be manually parsed using 'fromText' when the relevant types
 -- from a library such as "Network.AWS.EC2" are brought into scope.
 data IdentityDocument = IdentityDocument
-    { _devpayProductCodes :: Maybe Text
-    , _billingProducts    :: Maybe Text
+    { _devpayProductCodes :: Maybe [Text]
+    , _billingProducts    :: Maybe [Text]
     , _version            :: Maybe Text
     , _privateIp          :: Maybe Text
     , _availabilityZone   :: Text
@@ -365,10 +365,10 @@ data IdentityDocument = IdentityDocument
     , _pendingTime        :: Maybe ISO8601
     } deriving (Eq, Show)
 
-devpayProductCodes :: Lens' IdentityDocument (Maybe Text)
+devpayProductCodes :: Lens' IdentityDocument (Maybe [Text])
 devpayProductCodes = lens _devpayProductCodes (\s a -> s { _devpayProductCodes = a })
 
-billingProducts :: Lens' IdentityDocument (Maybe Text)
+billingProducts :: Lens' IdentityDocument (Maybe [Text])
 billingProducts = lens _billingProducts (\s a -> s { _billingProducts = a })
 
 version :: Lens' IdentityDocument (Maybe Text)

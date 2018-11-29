@@ -12,7 +12,7 @@
 
 -- |
 -- Module      : Network.AWS.Batch.DescribeJobs
--- Copyright   : (c) 2013-2017 Brendan Hay
+-- Copyright   : (c) 2013-2018 Brendan Hay
 -- License     : Mozilla Public License, v. 2.0.
 -- Maintainer  : Brendan Hay <brendan.g.hay+amazonka@gmail.com>
 -- Stability   : auto-generated
@@ -62,7 +62,7 @@ describeJobs = DescribeJobs' {_djJobs = mempty}
 
 -- | A space-separated list of up to 100 job IDs.
 djJobs :: Lens' DescribeJobs [Text]
-djJobs = lens _djJobs (\ s a -> s{_djJobs = a}) . _Coerce;
+djJobs = lens _djJobs (\ s a -> s{_djJobs = a}) . _Coerce
 
 instance AWSRequest DescribeJobs where
         type Rs DescribeJobs = DescribeJobsResponse
@@ -96,7 +96,7 @@ instance ToQuery DescribeJobs where
 
 -- | /See:/ 'describeJobsResponse' smart constructor.
 data DescribeJobsResponse = DescribeJobsResponse'
-  { _djrsJobs :: !(Maybe [JobDetail])
+  { _djrsJobs           :: !(Maybe [JobDetail])
   , _djrsResponseStatus :: !Int
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
@@ -105,7 +105,7 @@ data DescribeJobsResponse = DescribeJobsResponse'
 --
 -- Use one of the following lenses to modify other fields as desired:
 --
--- * 'djrsJobs' - The list of jobs. 
+-- * 'djrsJobs' - The list of jobs.
 --
 -- * 'djrsResponseStatus' - -- | The response status code.
 describeJobsResponse
@@ -113,15 +113,15 @@ describeJobsResponse
     -> DescribeJobsResponse
 describeJobsResponse pResponseStatus_ =
   DescribeJobsResponse'
-  {_djrsJobs = Nothing, _djrsResponseStatus = pResponseStatus_}
+    {_djrsJobs = Nothing, _djrsResponseStatus = pResponseStatus_}
 
 
--- | The list of jobs. 
+-- | The list of jobs.
 djrsJobs :: Lens' DescribeJobsResponse [JobDetail]
-djrsJobs = lens _djrsJobs (\ s a -> s{_djrsJobs = a}) . _Default . _Coerce;
+djrsJobs = lens _djrsJobs (\ s a -> s{_djrsJobs = a}) . _Default . _Coerce
 
 -- | -- | The response status code.
 djrsResponseStatus :: Lens' DescribeJobsResponse Int
-djrsResponseStatus = lens _djrsResponseStatus (\ s a -> s{_djrsResponseStatus = a});
+djrsResponseStatus = lens _djrsResponseStatus (\ s a -> s{_djrsResponseStatus = a})
 
 instance NFData DescribeJobsResponse where

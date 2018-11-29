@@ -12,7 +12,7 @@
 
 -- |
 -- Module      : Network.AWS.Batch.CreateComputeEnvironment
--- Copyright   : (c) 2013-2017 Brendan Hay
+-- Copyright   : (c) 2013-2018 Brendan Hay
 -- License     : Mozilla Public License, v. 2.0.
 -- Maintainer  : Brendan Hay <brendan.g.hay+amazonka@gmail.com>
 -- Stability   : auto-generated
@@ -55,11 +55,11 @@ import Network.AWS.Response
 
 -- | /See:/ 'createComputeEnvironment' smart constructor.
 data CreateComputeEnvironment = CreateComputeEnvironment'
-  { _cceState :: !(Maybe CEState)
-  , _cceComputeResources :: !(Maybe ComputeResource)
+  { _cceState                  :: !(Maybe CEState)
+  , _cceComputeResources       :: !(Maybe ComputeResource)
   , _cceComputeEnvironmentName :: !Text
-  , _cceType :: !CEType
-  , _cceServiceRole :: !Text
+  , _cceType                   :: !CEType
+  , _cceServiceRole            :: !Text
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
 
@@ -73,7 +73,7 @@ data CreateComputeEnvironment = CreateComputeEnvironment'
 --
 -- * 'cceComputeEnvironmentName' - The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed.
 --
--- * 'cceType' - The type of the compute environment. 
+-- * 'cceType' - The type of the compute environment.
 --
 -- * 'cceServiceRole' - The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf. If your specified role has a path other than @/@ , then you must either specify the full role ARN (this is recommended) or prefix the role name with the path.
 createComputeEnvironment
@@ -83,33 +83,33 @@ createComputeEnvironment
     -> CreateComputeEnvironment
 createComputeEnvironment pComputeEnvironmentName_ pType_ pServiceRole_ =
   CreateComputeEnvironment'
-  { _cceState = Nothing
-  , _cceComputeResources = Nothing
-  , _cceComputeEnvironmentName = pComputeEnvironmentName_
-  , _cceType = pType_
-  , _cceServiceRole = pServiceRole_
-  }
+    { _cceState = Nothing
+    , _cceComputeResources = Nothing
+    , _cceComputeEnvironmentName = pComputeEnvironmentName_
+    , _cceType = pType_
+    , _cceServiceRole = pServiceRole_
+    }
 
 
 -- | The state of the compute environment. If the state is @ENABLED@ , then the compute environment accepts jobs from a queue and can scale out automatically based on queues.
 cceState :: Lens' CreateComputeEnvironment (Maybe CEState)
-cceState = lens _cceState (\ s a -> s{_cceState = a});
+cceState = lens _cceState (\ s a -> s{_cceState = a})
 
 -- | Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments.
 cceComputeResources :: Lens' CreateComputeEnvironment (Maybe ComputeResource)
-cceComputeResources = lens _cceComputeResources (\ s a -> s{_cceComputeResources = a});
+cceComputeResources = lens _cceComputeResources (\ s a -> s{_cceComputeResources = a})
 
 -- | The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed.
 cceComputeEnvironmentName :: Lens' CreateComputeEnvironment Text
-cceComputeEnvironmentName = lens _cceComputeEnvironmentName (\ s a -> s{_cceComputeEnvironmentName = a});
+cceComputeEnvironmentName = lens _cceComputeEnvironmentName (\ s a -> s{_cceComputeEnvironmentName = a})
 
--- | The type of the compute environment. 
+-- | The type of the compute environment.
 cceType :: Lens' CreateComputeEnvironment CEType
-cceType = lens _cceType (\ s a -> s{_cceType = a});
+cceType = lens _cceType (\ s a -> s{_cceType = a})
 
 -- | The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf. If your specified role has a path other than @/@ , then you must either specify the full role ARN (this is recommended) or prefix the role name with the path.
 cceServiceRole :: Lens' CreateComputeEnvironment Text
-cceServiceRole = lens _cceServiceRole (\ s a -> s{_cceServiceRole = a});
+cceServiceRole = lens _cceServiceRole (\ s a -> s{_cceServiceRole = a})
 
 instance AWSRequest CreateComputeEnvironment where
         type Rs CreateComputeEnvironment =
@@ -155,8 +155,8 @@ instance ToQuery CreateComputeEnvironment where
 -- | /See:/ 'createComputeEnvironmentResponse' smart constructor.
 data CreateComputeEnvironmentResponse = CreateComputeEnvironmentResponse'
   { _ccersComputeEnvironmentName :: !(Maybe Text)
-  , _ccersComputeEnvironmentARN :: !(Maybe Text)
-  , _ccersResponseStatus :: !Int
+  , _ccersComputeEnvironmentARN  :: !(Maybe Text)
+  , _ccersResponseStatus         :: !Int
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
 
@@ -166,7 +166,7 @@ data CreateComputeEnvironmentResponse = CreateComputeEnvironmentResponse'
 --
 -- * 'ccersComputeEnvironmentName' - The name of the compute environment.
 --
--- * 'ccersComputeEnvironmentARN' - The Amazon Resource Name (ARN) of the compute environment. 
+-- * 'ccersComputeEnvironmentARN' - The Amazon Resource Name (ARN) of the compute environment.
 --
 -- * 'ccersResponseStatus' - -- | The response status code.
 createComputeEnvironmentResponse
@@ -174,23 +174,23 @@ createComputeEnvironmentResponse
     -> CreateComputeEnvironmentResponse
 createComputeEnvironmentResponse pResponseStatus_ =
   CreateComputeEnvironmentResponse'
-  { _ccersComputeEnvironmentName = Nothing
-  , _ccersComputeEnvironmentARN = Nothing
-  , _ccersResponseStatus = pResponseStatus_
-  }
+    { _ccersComputeEnvironmentName = Nothing
+    , _ccersComputeEnvironmentARN = Nothing
+    , _ccersResponseStatus = pResponseStatus_
+    }
 
 
 -- | The name of the compute environment.
 ccersComputeEnvironmentName :: Lens' CreateComputeEnvironmentResponse (Maybe Text)
-ccersComputeEnvironmentName = lens _ccersComputeEnvironmentName (\ s a -> s{_ccersComputeEnvironmentName = a});
+ccersComputeEnvironmentName = lens _ccersComputeEnvironmentName (\ s a -> s{_ccersComputeEnvironmentName = a})
 
--- | The Amazon Resource Name (ARN) of the compute environment. 
+-- | The Amazon Resource Name (ARN) of the compute environment.
 ccersComputeEnvironmentARN :: Lens' CreateComputeEnvironmentResponse (Maybe Text)
-ccersComputeEnvironmentARN = lens _ccersComputeEnvironmentARN (\ s a -> s{_ccersComputeEnvironmentARN = a});
+ccersComputeEnvironmentARN = lens _ccersComputeEnvironmentARN (\ s a -> s{_ccersComputeEnvironmentARN = a})
 
 -- | -- | The response status code.
 ccersResponseStatus :: Lens' CreateComputeEnvironmentResponse Int
-ccersResponseStatus = lens _ccersResponseStatus (\ s a -> s{_ccersResponseStatus = a});
+ccersResponseStatus = lens _ccersResponseStatus (\ s a -> s{_ccersResponseStatus = a})
 
 instance NFData CreateComputeEnvironmentResponse
          where

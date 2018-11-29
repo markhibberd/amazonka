@@ -7,7 +7,7 @@
 
 -- |
 -- Module      : Network.AWS.S3.Encryption.Instructions
--- Copyright   : (c) 2013-2016 Brendan Hay
+-- Copyright   : (c) 2013-2018 Brendan Hay
 -- License     : Mozilla Public License, v. 2.0.
 -- Maintainer  : Brendan Hay <brendan.g.hay@gmail.com>
 -- Stability   : provisional
@@ -16,11 +16,7 @@
 module Network.AWS.S3.Encryption.Instructions where
 
 import           Control.Arrow
-#if ! MIN_VERSION_lens(4,13,0)
-import           Control.Lens hiding (coerce)
-#else
-import           Control.Lens
-#endif
+import           Control.Lens (Lens', lens, view, (&), (%~))
 import           Control.Monad.Trans.AWS
 import           Data.Aeson.Types                   (parseEither)
 import           Data.Coerce

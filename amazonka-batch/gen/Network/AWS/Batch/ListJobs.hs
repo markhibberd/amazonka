@@ -12,7 +12,7 @@
 
 -- |
 -- Module      : Network.AWS.Batch.ListJobs
--- Copyright   : (c) 2013-2017 Brendan Hay
+-- Copyright   : (c) 2013-2018 Brendan Hay
 -- License     : Mozilla Public License, v. 2.0.
 -- Maintainer  : Brendan Hay <brendan.g.hay+amazonka@gmail.com>
 -- Stability   : auto-generated
@@ -51,10 +51,10 @@ import Network.AWS.Response
 
 -- | /See:/ 'listJobs' smart constructor.
 data ListJobs = ListJobs'
-  { _ljNextToken :: !(Maybe Text)
-  , _ljJobStatus :: !(Maybe JobStatus)
+  { _ljNextToken  :: !(Maybe Text)
+  , _ljJobStatus  :: !(Maybe JobStatus)
   , _ljArrayJobId :: !(Maybe Text)
-  , _ljJobQueue :: !(Maybe Text)
+  , _ljJobQueue   :: !(Maybe Text)
   , _ljMaxResults :: !(Maybe Int)
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
 
@@ -76,33 +76,33 @@ listJobs
     :: ListJobs
 listJobs =
   ListJobs'
-  { _ljNextToken = Nothing
-  , _ljJobStatus = Nothing
-  , _ljArrayJobId = Nothing
-  , _ljJobQueue = Nothing
-  , _ljMaxResults = Nothing
-  }
+    { _ljNextToken = Nothing
+    , _ljJobStatus = Nothing
+    , _ljArrayJobId = Nothing
+    , _ljJobQueue = Nothing
+    , _ljMaxResults = Nothing
+    }
 
 
 -- | The @nextToken@ value returned from a previous paginated @ListJobs@ request where @maxResults@ was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the @nextToken@ value. This value is @null@ when there are no more results to return.
 ljNextToken :: Lens' ListJobs (Maybe Text)
-ljNextToken = lens _ljNextToken (\ s a -> s{_ljNextToken = a});
+ljNextToken = lens _ljNextToken (\ s a -> s{_ljNextToken = a})
 
 -- | The job status with which to filter jobs in the specified queue. If you do not specify a status, only @RUNNING@ jobs are returned.
 ljJobStatus :: Lens' ListJobs (Maybe JobStatus)
-ljJobStatus = lens _ljJobStatus (\ s a -> s{_ljJobStatus = a});
+ljJobStatus = lens _ljJobStatus (\ s a -> s{_ljJobStatus = a})
 
 -- | The job ID for an array job. Specifying an array job ID with this parameter lists all child jobs from within the specified array.
 ljArrayJobId :: Lens' ListJobs (Maybe Text)
-ljArrayJobId = lens _ljArrayJobId (\ s a -> s{_ljArrayJobId = a});
+ljArrayJobId = lens _ljArrayJobId (\ s a -> s{_ljArrayJobId = a})
 
 -- | The name or full Amazon Resource Name (ARN) of the job queue with which to list jobs.
 ljJobQueue :: Lens' ListJobs (Maybe Text)
-ljJobQueue = lens _ljJobQueue (\ s a -> s{_ljJobQueue = a});
+ljJobQueue = lens _ljJobQueue (\ s a -> s{_ljJobQueue = a})
 
 -- | The maximum number of results returned by @ListJobs@ in paginated output. When this parameter is used, @ListJobs@ only returns @maxResults@ results in a single page along with a @nextToken@ response element. The remaining results of the initial request can be seen by sending another @ListJobs@ request with the returned @nextToken@ value. This value can be between 1 and 100. If this parameter is not used, then @ListJobs@ returns up to 100 results and a @nextToken@ value if applicable.
 ljMaxResults :: Lens' ListJobs (Maybe Int)
-ljMaxResults = lens _ljMaxResults (\ s a -> s{_ljMaxResults = a});
+ljMaxResults = lens _ljMaxResults (\ s a -> s{_ljMaxResults = a})
 
 instance AWSRequest ListJobs where
         type Rs ListJobs = ListJobsResponse
@@ -143,7 +143,7 @@ instance ToQuery ListJobs where
 
 -- | /See:/ 'listJobsResponse' smart constructor.
 data ListJobsResponse = ListJobsResponse'
-  { _ljrsNextToken :: !(Maybe Text)
+  { _ljrsNextToken      :: !(Maybe Text)
   , _ljrsResponseStatus :: !Int
   , _ljrsJobSummaryList :: ![JobSummary]
   } deriving (Eq, Read, Show, Data, Typeable, Generic)
@@ -163,22 +163,22 @@ listJobsResponse
     -> ListJobsResponse
 listJobsResponse pResponseStatus_ =
   ListJobsResponse'
-  { _ljrsNextToken = Nothing
-  , _ljrsResponseStatus = pResponseStatus_
-  , _ljrsJobSummaryList = mempty
-  }
+    { _ljrsNextToken = Nothing
+    , _ljrsResponseStatus = pResponseStatus_
+    , _ljrsJobSummaryList = mempty
+    }
 
 
 -- | The @nextToken@ value to include in a future @ListJobs@ request. When the results of a @ListJobs@ request exceed @maxResults@ , this value can be used to retrieve the next page of results. This value is @null@ when there are no more results to return.
 ljrsNextToken :: Lens' ListJobsResponse (Maybe Text)
-ljrsNextToken = lens _ljrsNextToken (\ s a -> s{_ljrsNextToken = a});
+ljrsNextToken = lens _ljrsNextToken (\ s a -> s{_ljrsNextToken = a})
 
 -- | -- | The response status code.
 ljrsResponseStatus :: Lens' ListJobsResponse Int
-ljrsResponseStatus = lens _ljrsResponseStatus (\ s a -> s{_ljrsResponseStatus = a});
+ljrsResponseStatus = lens _ljrsResponseStatus (\ s a -> s{_ljrsResponseStatus = a})
 
 -- | A list of job summaries that match the request.
 ljrsJobSummaryList :: Lens' ListJobsResponse [JobSummary]
-ljrsJobSummaryList = lens _ljrsJobSummaryList (\ s a -> s{_ljrsJobSummaryList = a}) . _Coerce;
+ljrsJobSummaryList = lens _ljrsJobSummaryList (\ s a -> s{_ljrsJobSummaryList = a}) . _Coerce
 
 instance NFData ListJobsResponse where

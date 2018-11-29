@@ -5,7 +5,7 @@
 
 -- |
 -- Module      : Test.AWS.Gen.Batch
--- Copyright   : (c) 2013-2017 Brendan Hay
+-- Copyright   : (c) 2013-2018 Brendan Hay
 -- License     : Mozilla Public License, v. 2.0.
 -- Maintainer  : Brendan Hay <brendan.g.hay+amazonka@gmail.com>
 -- Stability   : auto-generated
@@ -14,11 +14,11 @@
 module Test.AWS.Gen.Batch where
 
 import Data.Proxy
+import Network.AWS.Batch
+import Test.AWS.Batch.Internal
 import Test.AWS.Fixture
 import Test.AWS.Prelude
 import Test.Tasty
-import Network.AWS.Batch
-import Test.AWS.Batch.Internal
 
 -- Auto-generated: the actual test selection needs to be manually placed into
 -- the top-level so that real test data can be incrementally added.
