@@ -91,9 +91,6 @@ library
         , exceptions           >= 0.6
         , hashable             >= 1.2
         , http-client          >= 0.4 && < 0.6
-        -- Version 2.3 drops conduitManagerSettings
-        , http-conduit         >= 2.1.4 && < 2.3
-        -- , http-conduit         >= 2.1.4 && < 3
         , http-types           >= 0.8 && (<0.11 || >=0.12)
         , lens                 >= 4.4
         , memory               >= 0.6
@@ -109,6 +106,14 @@ library
         , xml-conduit          >= 1.7.0.1
         , xml-types            >= 0.3.4
 
+    if impl(ghc >= 8.2.0)
+      build-depends:
+        http-conduit        >= 2.1.7 && < 3
+    else
+      -- Version 2.3 drops conduitManagerSettings
+      build-depends:
+        http-conduit        >= 2.1.4 && < 2.3
+        
     if !impl(ghc>=7.9)
         build-depends:
               nats >= 0.1.3
